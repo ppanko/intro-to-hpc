@@ -31,8 +31,10 @@
 
 ```
 # Contents
+This cheatsheet gives a basic overview for bash commands and programs commonly used when navigating the quanah cluster at Texas Tech. Warning: This guide assumes you have an assigned eraider identity (refered to as <eraider> below) and are able to log in to quanah. See the README for more information. 
 &nbsp;
-## [Common BASH commands](#common-bash-commands)
+  
+## [1. Common BASH commands](#common-bash-commands)
 
    * `pwd`
     
@@ -44,7 +46,7 @@
     
    * `mv`
     
-## [Network protocols & programs](#network-protocols-and-programs)
+## [2. Network protocols & programs](#network-protocols-and-programs)
 
    * `ssh`
    
@@ -52,7 +54,7 @@
    
    * `wget`
    
-## [Job scheduler commands](#job-scheduler-commands)
+## [3. Job scheduler commands](#job-scheduler-commands)
 
    * `qsub`
    
@@ -62,7 +64,6 @@
 &nbsp;
 
 ## Common BASH commands
-&nbsp;
 &nbsp;
 ***
 > `pwd` (**p**rint **w**orking **d**irectory)
@@ -119,7 +120,6 @@
 &nbsp;
 ## Network protocols and programs
 &nbsp;
-&nbsp;
 ***
 > `ssh` (**s**ecure **sh**ell)
 
@@ -155,7 +155,6 @@ wget https://github.com/ppanko/intro-to-hpc/BASH-cheatsheet.md
 ```
 &nbsp;
 ## Job scheduler commands 
-&nbsp;
 &nbsp;
 ***
 > `qsub` (**q**ueue **sub**mit)

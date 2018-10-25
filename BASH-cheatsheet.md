@@ -44,7 +44,7 @@
     
    * `mv`
     
-## [Network protocols & programs](#network-protocols-&-programs)
+## [Network protocols & programs](#network-protocols-and-programs)
 
    * `ssh`
    
@@ -117,7 +117,7 @@
 > mv testJob.sh newFolder/
 ```
 &nbsp;
-## Network protocols & programs
+## Network protocols and programs
 &nbsp;
 &nbsp;
 ***

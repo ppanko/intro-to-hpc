@@ -4,7 +4,7 @@
 
 &nbsp;&nbsp;&nbsp;Shows what folder you are in 
 
-###### Example:
+###### &nbsp;&nbsp;&nbsp;&nbsp;Example:
 
 ```bash
 > pwd
@@ -16,7 +16,7 @@
 
 &nbsp;&nbsp;&nbsp;Shows you the files for the specified directory 
 
-###### Example:
+###### &nbsp;&nbsp;&nbsp;&nbsp;Example:
 ```bash
 > ls
 01_serialExample.R  02_parallelExample.R  testJob.sh
@@ -26,7 +26,7 @@
 
 &nbsp;&nbsp;&nbsp;Creates a directory (Needs a name)
 
-###### Example:
+###### &nbsp;&nbsp;&nbsp;&nbsp;Example:
 ```bash
 > mkdir newFolder
 ```
@@ -35,7 +35,7 @@
 
 &nbsp;&nbsp;&nbsp;Copies a file or folder (Needs names of the original and the copy) 
 
-###### Example:
+###### &nbsp;&nbsp;&nbsp;&nbsp;Example:
 ```bash
 > cp testJob.sh testJob-copy.sh 
 ```
@@ -44,7 +44,32 @@
 
 &nbsp;&nbsp;&nbsp;Moves a file or folder (Needs to be directed where to move from and to) 
 
-###### Example:
+###### &nbsp;&nbsp;&nbsp;&nbsp;Example:
 ```bash
 > mv testJob.sh newFolder/
 ```
+***
+## Network protocols  
+
+> `ssh` (**s**ecure **sh**ell)
+
+&nbsp;&nbsp;&nbsp;Access a remote computer 
+
+###### &nbsp;&nbsp;&nbsp;&nbsp;Example:
+```bash
+> ssh <eraider>@quanah.hpcc.ttu.edu
+```
+***
+> `scp` (**s**ecure **c**o**p**y)
+
+&nbsp;&nbsp;&nbsp;Copies files to a remote computer
+
+###### &nbsp;&nbsp;&nbsp;&nbsp;Example:
+```bash
+## From local to remote 
+> scp testJob.sh <eraider>@quanah.hpcc.ttu.edu:testJob.sh
+
+## From remote to local
+> scp <eraider>@quanah.hpcc.ttu.edu:testResult.RDS
+```
+

@@ -6,6 +6,8 @@
 
 &nbsp;&nbsp;&nbsp;Very useful for facilitating and running jobs on a computing cluster! 
 
+&nbsp;
+
 > bash syntax basics 
 
 &nbsp;&nbsp;&nbsp;Usually a command followed by arguments separated by a space.
@@ -32,6 +34,7 @@
 ```
 # Contents
 This cheatsheet gives a basic overview for bash commands and programs commonly used when navigating the quanah cluster at Texas Tech. Warning: This guide assumes you have an assigned eraider identity (refered to as <eraider> below) and are able to log in to quanah. See the README for more information. 
+  
 &nbsp;
 &nbsp;
   

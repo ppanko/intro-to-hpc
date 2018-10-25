@@ -12,6 +12,8 @@
 
 &nbsp;&nbsp;&nbsp;Arguments can be variables, directory paths or options.  
 
+&nbsp;
+
 ###### &nbsp;&nbsp;&nbsp;&nbsp;Example:
 
 ```bash
@@ -29,6 +31,7 @@
 
 ```
 # Contents
+&nbsp;
 ## [Common BASH commands](#common-bash-commands)
 
    * `pwd`
@@ -56,9 +59,12 @@
    * `qstat`
    
    * `qdel` 
-   
-## Common BASH commands
+&nbsp;
 
+## Common BASH commands
+&nbsp;
+&nbsp;
+***
 > `pwd` (**p**rint **w**orking **d**irectory)
 
 &nbsp;&nbsp;&nbsp;Shows what folder you are in.
@@ -69,8 +75,8 @@
 > pwd
 /home/pavel/Documents
 ```
+&nbsp;
 ***
-
 > `ls` (**l**i**s**t files)
 
 &nbsp;&nbsp;&nbsp;Shows you the files for the specified directory.
@@ -80,6 +86,7 @@
 > ls
 01_serialExample.R  02_parallelExample.R  testJob.sh
 ```
+&nbsp;
 ***
 > `mkdir` (**m**ake **dir**ectory)
 
@@ -89,6 +96,7 @@
 ```bash
 > mkdir newFolder
 ```
+&nbsp;
 ***
 > `cp` (**c**o**p**y)
 
@@ -98,6 +106,7 @@
 ```bash
 > cp testJob.sh testJob-copy.sh 
 ```
+&nbsp;
 ***
 > `mv` (**m**o**v**e)
 
@@ -107,9 +116,11 @@
 ```bash
 > mv testJob.sh newFolder/
 ```
-
-## ** Network protocols & programs**
-
+&nbsp;
+## Network protocols & programs
+&nbsp;
+&nbsp;
+***
 > `ssh` (**s**ecure **sh**ell)
 
 &nbsp;&nbsp;&nbsp;Access a remote computer.
@@ -118,6 +129,7 @@
 ```bash
 > ssh <eraider>@quanah.hpcc.ttu.edu
 ```
+&nbsp;
 ***
 > `scp` (**s**ecure **c**o**p**y)
 
@@ -131,6 +143,7 @@
 ## From remote to local
 > scp <eraider>@quanah.hpcc.ttu.edu:testResult.RDS
 ```
+&nbsp;
 ***
 > `wget` (**w**eb **get**)
 
@@ -140,8 +153,11 @@
 ```bash
 wget https://github.com/ppanko/intro-to-hpc/BASH-cheatsheet.md
 ```
-## ** Job scheduler commands **
-
+&nbsp;
+## Job scheduler commands 
+&nbsp;
+&nbsp;
+***
 > `qsub` (**q**ueue **sub**mit)
 
 &nbsp;&nbsp;&nbsp;Submit a job to the computer cluster. 
@@ -151,6 +167,7 @@ wget https://github.com/ppanko/intro-to-hpc/BASH-cheatsheet.md
 > qsub testJob.sh
 Your job <job_id> ("testJob") has been submitted
 ```
+&nbsp;
 ***
 > `qstat` (**q**ueue **stat**us)
 
@@ -164,6 +181,7 @@ job-ID    prior   name    user       state     submit/start at      slots
 <job_id> 5.00000 testJob <eraider>     qw    10/26/2018 10:59:59       32        
 
 ```
+&nbsp;
 ***
 > `qdel` (**q**ueue **del**ete)
 

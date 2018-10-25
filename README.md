@@ -1,8 +1,11 @@
----
-HI
-```
-ls -f
-```
-hello
+## Common commands 
 --
-Hi 
+
+`pwd` (**p**rint **w**orking **d**irectory)
+- Shows what folder you are in 
+
+Example:
+```
+> pwd
+/home/pavel/Documents
+```

@@ -1,8 +1,8 @@
 # BASH cheatsheet 
 
-> bash (**b**ourne **a**gain **sh**ell) 
+> [bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) (**b**ourne **a**gain **sh**ell) 
 
-&nbsp;&nbsp;&nbsp;Language used to communicate with UNIX/UNIX-like operating systems.
+&nbsp;&nbsp;&nbsp;Language used to communicate with UNIX/[UNIX-like](https://en.wikipedia.org/wiki/Unix-like) operating systems.
 
 &nbsp;&nbsp;&nbsp;Very useful for facilitating and running jobs on a computing cluster! 
 

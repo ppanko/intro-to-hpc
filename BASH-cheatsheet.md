@@ -28,8 +28,10 @@
 > ls -f /home/pavel/Documents
 
 ```
+# Contents
+[Common BASH commands](#common-bash-commands)
 
-## ** Common BASH commands **
+#Common bash commands`
 
 > `pwd` (**p**rint **w**orking **d**irectory)
 

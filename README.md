@@ -1,19 +1,20 @@
 ## Common commands 
---
 
 `pwd` (**p**rint **w**orking **d**irectory)
 
 &nbsp;&nbsp;&nbsp;Shows what folder you are in 
 
-###### &nbsp;&nbsp;&nbsp;Example:
+###### Example:
+
 ```bash
 > pwd
 /home/pavel/Documents
 ```
-
+***
 
 `ls` (**l**i**s**t files)
-Shows you the files for the specified directory 
+
+&nbsp;&nbsp;&nbsp;Shows you the files for the specified directory 
 
 ###### Example:
 ```bash

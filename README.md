@@ -2,13 +2,15 @@
 --
 
 `pwd` (**p**rint **w**orking **d**irectory)
-Shows what folder you are in 
 
-###### Example:
+&nbsp;&nbsp;&nbsp;Shows what folder you are in 
+
+###### &nbsp;&nbsp;&nbsp;Example:
 ```bash
 > pwd
 /home/pavel/Documents
 ```
+
 
 `ls` (**l**i**s**t files)
 Shows you the files for the specified directory 

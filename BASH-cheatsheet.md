@@ -31,7 +31,7 @@
 # Contents
 [Common BASH commands](#common-bash-commands)
 
-## # Common BASH commands
+## Common BASH commands
 
 > `pwd` (**p**rint **w**orking **d**irectory)
 

@@ -34,7 +34,7 @@
 ```
 &nbsp;
 # Contents
-This cheatsheet gives a basic overview for bash commands and programs commonly used when navigating the quanah computing cluster provided by the [HPCC](https://www.depts.ttu.edu/hpcc/) at Texas Tech. 
+This cheatsheet gives a basic overview for BASH commands and programs commonly used when navigating the quanah computing cluster provided by the [HPCC](https://www.depts.ttu.edu/hpcc/) at Texas Tech. 
 
 Warning: This guide assumes you have an assigned eraider identity (refered to as \<eraider\> below) and are able to log in to quanah. See the README for more information. 
   

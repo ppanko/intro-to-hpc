@@ -4,9 +4,9 @@ This is a guide for transferring and running "testJob" on the Quanah cluster.
 
 ## 1. Transferring files  
 
-The first step to running an HPC job is to of course create the script that does the job. You should always test your job multiple times on your local computer before thinking about HPC. 
+The first step to running an HPC job is to, _of course_, create the script that does the job. You should always test your job multiple times on your local computer before thinking about using HPC. 
 
-Assuming you've done this step and you have an account with the HPCC ([see this if you don't]), you will need to get your materials to Quanah. This usually involves storing your scripts in a directory and transferring them to Quanah via a [network protocol](). There are several ways to do this:
+Assuming you have a job ready and you have an account with the HPCC ([see this if you don't]()), you will need to get your materials to Quanah. This usually involves storing your scripts in a directory and transferring them to Quanah via a [network protocol](). There are several ways to do this:
 
 [Command line]():
    * Secure copy protocol ([scp]()) 
@@ -74,5 +74,7 @@ Each of the lines beginning with #$ are the parameters of your job. I will list 
 * `-pe` - the "parallel environemnt". Currently the only choices are `sm` and `mpi`; simpler jobs should use `sm`. 
 
 ***Number of Processors***: the number to the right of `-pe sm` indicates the number of processors you are requesting from Quanah. For `sm` jobs, the allowed number is 1-36. If you want to request additional cores, you might consider using `mpi` or creating an array job using the `-t` parameter (guide coming soon).  
+
+***Modules***: After the section of job parameters you will see a line that starts with "module". This command tells the job scheduler which "packages" you want to use. When running R jobs the modules you will need are `intel` and `R`. 
 
 Keep in mind, a good naming convention is always a good way to keep your files organized. For example, 

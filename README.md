@@ -4,7 +4,7 @@ This repository provides example materials for High-Performance Computing using 
 The provided examples are for running jobs using the [R language/environment](https://www.r-project.org/about.html). 
 
 ## What is High-Performance Computing? 
-High Performance Computing (HPC) is the use of a computing cluster or other high-performance computer (e.g., a supercomputer) to do computer-related things very very quickly. 
+High Performance Computing (HPC) is the use of a computing cluster or other high-performance computer (e.g., a supercomputer) to do computational jobs very very quickly. This is because the job may be split to run on several computers on the cluster at the same time.  
 
 HPC is a good tool for when you have a lot of data or need to run many analyses. 
 

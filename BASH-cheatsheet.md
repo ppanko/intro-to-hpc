@@ -1,4 +1,4 @@
-## Common commands 
+## Common BASH commands 
 
 > `pwd` (**p**rint **w**orking **d**irectory)
 

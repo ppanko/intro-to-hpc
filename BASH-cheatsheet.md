@@ -30,7 +30,20 @@
 ```
 # Contents
 [Common BASH commands](#common-bash-commands)
-
+    > `pwd`
+    > `ls`
+    > `mkdir` 
+    > `cp`
+    > `mv`
+[Network protocols & programs](#network-protocols-&-programs)
+   > `ssh`
+   > `scp`
+   > `wget`
+[Job scheduler commands](#job-scheduler-commands)
+   > `qsub`
+   > `qstat`
+   > `qdel` 
+   
 ## Common BASH commands
 
 > `pwd` (**p**rint **w**orking **d**irectory)

@@ -37,10 +37,10 @@ https://www.depts.ttu.edu/hpcc/accounts/studentrequestform.php
 
 * [BASH cheatsheet](https://github.com/ppanko/intro-to-hpc/blob/master/BASH-cheatsheet.md) - the BASH language is used to communicate with Quanah and execute jobs. This cheatsheet gets you started.  
 * [Glossory]() - A list of definitions for common HPC-related terminology. 
-* [Common workflow]() - provides an example of a workflow one might have when running a job on Quanah. 
 * [tesJob directory]() - a directory showing an example R job, contains: 
     * [run_testJob.sh]() - a shell script used to submit the "02" script to Quanah's job scheduler. 
     * [01_testJob-serial.R]() - an R script showing serial execution. 
     * [02_testJob-parallel.R]() - an R script showing parallel execution. Can be submitted to Quanah via run_testJob.sh
+    * [README]() - - provides an example of a workflow for running "testJob" on Quanah. 
     
 If you have any comments or suggestions, please email me at pavel.panko@ttu.edu

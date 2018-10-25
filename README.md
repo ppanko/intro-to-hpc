@@ -1,6 +1,6 @@
 ## Common commands 
 
-`pwd` (**p**rint **w**orking **d**irectory)
+> `pwd` (**p**rint **w**orking **d**irectory)
 
 &nbsp;&nbsp;&nbsp;Shows what folder you are in 
 

@@ -33,6 +33,7 @@
 # Contents
 This cheatsheet gives a basic overview for bash commands and programs commonly used when navigating the quanah cluster at Texas Tech. Warning: This guide assumes you have an assigned eraider identity (refered to as <eraider> below) and are able to log in to quanah. See the README for more information. 
 &nbsp;
+&nbsp;
   
 ## [1. Common BASH commands](#common-bash-commands)
 
@@ -176,7 +177,7 @@ Your job <job_id> ("testJob") has been submitted
 ```bashx
  > qstat
 job-ID    prior   name    user       state     submit/start at      slots 
-------------------------------------------------------------------------
+-------------------------------------------------------------------------
 <job_id> 5.00000 testJob <eraider>     qw    10/26/2018 10:59:59       32        
 
 ```

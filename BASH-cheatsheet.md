@@ -1,4 +1,35 @@
-## Common BASH commands 
+# BASH cheatsheet 
+
+> bash (**b**ourne **a**gain **sh**ell) 
+
+&nbsp;&nbsp;&nbsp;Language used to communicate with UNIX/UNIX-like operating systems.
+
+&nbsp;&nbsp;&nbsp;Very useful for facilitating and running jobs on a computing cluster! 
+
+> bash syntax basics 
+
+&nbsp;&nbsp;&nbsp;Usually a command followed by arguments separated by a space.
+
+&nbsp;&nbsp;&nbsp;Arguments can be variables, directory paths or options.  
+
+###### &nbsp;&nbsp;&nbsp;&nbsp;Example:
+
+```bash
+## Shows files in the current directory
+> ls 
+
+## Shows files in the current directory even if they are hidden
+> ls -f
+
+## Shows the files in the specified directory
+> ls /home/pavel/Documents
+
+## Shows files in the specified directory even if they are hidden
+> ls -f /home/pavel/Documents
+
+```
+
+## ** Common BASH commands **
 
 > `pwd` (**p**rint **w**orking **d**irectory)
 
@@ -48,8 +79,8 @@
 ```bash
 > mv testJob.sh newFolder/
 ```
-***
-## Network protocols  
+
+## ** Network protocols **
 
 > `ssh` (**s**ecure **sh**ell)
 

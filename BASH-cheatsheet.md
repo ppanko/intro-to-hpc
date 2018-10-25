@@ -68,6 +68,7 @@ Warning: This guide assumes you have an assigned eraider identity (refered to as
    * `qstat`
    
    * `qdel` 
+   
 &nbsp;
 
 ## Common BASH commands

@@ -12,11 +12,11 @@ The [job script](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md)
 
 Assuming you have a job ready and you have an account with the HPCC ([see this if you don't](https://github.com/ppanko/intro-to-hpc/blob/master/README.md)), you will need to get your materials from your [local computer](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) to the [remote computer](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) on Quanah. This means transferring them to Quanah via a [network protocol](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md). There are several ways to do this:
 
-[Command line](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md):
+[Command line interface](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md):
    * Secure copy protocol ([scp](https://github.com/ppanko/intro-to-hpc/blob/master/BASH-cheatsheet.md)) 
    * rsync
    
-[Graphical](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md): 
+[Graphical user interface](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md): 
    * WinSCP ([Here's an example](https://research.computing.yale.edu/support/hpc/user-manual/transfer-files-or-cluster))
    
 ##### Example: 

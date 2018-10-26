@@ -42,8 +42,10 @@ You can start by logging on to the cluster:
 
 ##### Example:
 ```bash
-ssh <eraider>@quanah.hpcc.ttu.edu
+> ssh <eraider>@quanah.hpcc.ttu.edu
 ```
+
+#### Shell script  
 
 At this point you can submit a job directly using [`qsub`](). However, this can be messy because you would also have to list all of the parameters of your job during the call to `qsub`. Creating a [shell script]() that contains all of the parameters can streamline this process
 
@@ -77,4 +79,11 @@ Each of the lines beginning with #$ are the parameters of your job. I will list 
 
 ***Modules***: After the section of job parameters you will see a line that starts with "module". This command tells the job scheduler which "packages" you want to use. When running R jobs the modules you will need are `intel` and `R`. 
 
-Keep in mind, a good naming convention is always a good way to keep your files organized. For example, 
+***General organization***: Try to stay as organized as you can. A lot of common errors and mistakes can be alleviated by having a good naming convention for your files. Here's a few other things you may want to note:
+
+* Have your shell script (e.g., run_testJob.sh) in the same directory as your job script (e.g, 02_testJob-parallel.R).
+* Make sure any other directories or files that you need _during_ the job are created before you run the job. 
+* If you are using R packages, make sure they are available. If not you will have to install them for your session (guide coming soon). 
+
+## 3. Running and monitoring your job 
+

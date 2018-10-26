@@ -152,6 +152,7 @@ If there is something wrong with your [job](https://github.com/ppanko/intro-to-h
 
 Once your [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) is done, [`qstat`](https://github.com/ppanko/intro-to-hpc/blob/master/BASH-cheatsheet.md) will return a blank line and your eraider will no longer be listed on the queue status page. An easy way to tell if your [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) terminated correctly is to check the .e or .o files using a text editor, such as `emacs`. 
 
+##### Example:
 ```bash
 > emacs testJob.e
 
@@ -159,10 +160,17 @@ Once your [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) 
 
 > emacs testJob.o
 ```
-When finished checking the files, you can quit `emacs` by pressing Control-c. 
+When finished checking the files, you can quit `emacs` by pressing Control-c. You can exit Quanah by running the `exit` command. 
+
+##### Example:
+```bash
+> exit 
+Connection to quanah.hpcc.ttu.edu closed.
+```
 
 Assumming nothing went wrong with the job, you are ready to retrieve your results. This means that the data must be copied from the [remote computer](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) to the [local computer](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) - essentially the opposite of step 1. Ideally, your results will be in a pre-specified location and have a known naming convention. Having this structure in place can make getting results to your computer really easy: 
 
+##### Example:
 ```bash
 ## Transfer results to my "Documents" directory
 scp -r <eraider>@quanah.hpcc.ttu.edu:testJob/data /home/pavel/Documents

@@ -31,7 +31,6 @@ sampleMatList <- lapply(
     nSamples   = nSamples
 )
 
-
 ## Save the list of matrices to an RDS file in the data directory 
 saveRDS(sampleMatList, "data/sampleMatList.RDS")
 

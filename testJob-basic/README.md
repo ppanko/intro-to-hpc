@@ -180,4 +180,6 @@ scp -r <eraider>@quanah.hpcc.ttu.edu:testJob/data /home/pavel/Documents
 
 OR by using WinSCP again ([Here's an example](https://research.computing.yale.edu/support/hpc/user-manual/transfer-files-or-cluster)).
 
+&nbsp;
+
 **Congratulations!** You just ran an HPC [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) on the Quanah [computer cluster](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md).

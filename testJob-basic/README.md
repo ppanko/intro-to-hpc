@@ -2,12 +2,15 @@
 
 This is a guide for facilitating and running a simple HPC job on the Quanah [computer cluster](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md). The provided examples use the [testJob-basic](https://github.com/ppanko/intro-to-hpc/tree/master/testJob-basic) directory.
 
-
-## 1. Transferring files  
+## 0. Preparing a job 
 
 The first step to running an HPC [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) is, _of course_, to create the script that does the [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) you want (i.e., the [job script](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md)). You should always test your [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) multiple times on your [local computer](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) before thinking about using it [remotely](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md), like on the Quanah [computer cluster](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md). You should also measure how long your [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) takes to run as this can be a deciding factor for the amount of resources you request from the [job scheduler](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) or if you need a [cluster computer](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) at all. 
 
 The [job script](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) should be able to communicate the necessary commands without user input (i.e., no [interactive processing](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md)). This is called [batch processing](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) and is analogous to providing a set of instructions or templates to the computer. 
+
+&nbsp;
+
+## 1. Transferring files  
 
 Assuming you have a [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) ready and you have an account with the HPCC ([see this if you don't](https://github.com/ppanko/intro-to-hpc/blob/master/README.md)), you will need to get your materials from your [local computer](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) to the [remote computer](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) on Quanah. This means transferring them to Quanah via a [network protocol](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md). There are several ways to do this:
 

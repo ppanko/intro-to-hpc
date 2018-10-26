@@ -44,7 +44,7 @@ Assuming you have a job ready and you have an account with the HPCC ([see this i
 
 Setting up jobs on Quanah is easy but having a template makes it even easier. 
 
-You can start by logging on to the cluster using [`ssh`](https://github.com/ppanko/intro-to-hpc/blob/master/BASH-cheatsheet.md): 
+You can start by logging on to the cluster using [`ssh`](https://github.com/ppanko/intro-to-hpc/blob/master/BASH-cheatsheet.md), or by using puTTY ([here's a guide](https://mediatemple.net/community/products/dv/204404604/using-ssh-in-putty-): 
 
 ##### Example:
 ```bash
@@ -167,5 +167,7 @@ Assumming nothing went wrong with the job, you are ready to retrieve your result
 ## Transfer results to my "Documents" directory
 scp -r <eraider>@quanah.hpcc.ttu.edu:testJob/data /home/pavel/Documents
 ```
+
+OR by using WinSCP again ([Here's an example](https://research.computing.yale.edu/support/hpc/user-manual/transfer-files-or-cluster)).
 
 **Congratulations!** You just ran an HPC [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) on the Quanah [computer cluster](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md).

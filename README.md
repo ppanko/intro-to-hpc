@@ -4,22 +4,22 @@ This repository provides example materials for High-Performance Computing using 
 The provided examples are for running jobs using the [R language/environment](https://www.r-project.org/about.html). 
 
 ## What is High-Performance Computing? 
-High Performance Computing (HPC) is the use of a computing cluster or other high-performance computer (e.g., a supercomputer) to do computational jobs very very quickly. This is because the job may be split to run on several computers on the cluster in parallel.   
+High Performance Computing (HPC) is the use of a computer cluster or other high-performance computer (e.g., a supercomputer) to do computational jobs very very quickly. The benefit of this approach is the efficiency of performance - the user is able to split the job to run in parallel on several nodes (computers) or several processors on a single node.   
 
-HPC is a good tool for when you have a lot of data or need to run many analyses. 
+In short, HPC is a good technique for when you have a lot of data or need to run many analyses. 
 
 ## Getting started 
 
 1. Get an HPCC account
 
-    You will need to [request](https://www.depts.ttu.edu/hpcc/accounts/facultyrequest.php) an account from the HPCC to access the Quanah cluster. This is free and should be approved fairly quickly 
+    You will need to [request](https://www.depts.ttu.edu/hpcc/accounts/facultyrequest.php) an account from the HPCC to access the Quanah cluster. This is free and requests are approved fairly quickly. 
 
    > Here's a link to the request form: 
 https://www.depts.ttu.edu/hpcc/accounts/studentrequestform.php
  
 2. Configure ssh connection
 
-    Connections to the Quanah cluster are made through the "Secure Shell" (ssh) network protocol. Mac and Unix-like operating systems have access to ssh naturally but Windows needs some extra help.   
+    Connections to the Quanah cluster are made through the "Secure Shell" (`ssh`) network protocol. Mac and Unix-like operating systems have access to `ssh` naturally but Windows needs some extra help.   
  
    If you are a Windows user, you can either:
       * Download Cygwin and configure ssh ([comprehensive guide](https://docs.oracle.com/cd/E24628_01/install.121/e22624/preinstall_req_cygwin_ssh.htm#EMBSC150)) 
@@ -35,12 +35,18 @@ https://www.depts.ttu.edu/hpcc/accounts/studentrequestform.php
 
 ## Resources 
 
-* [BASH cheatsheet](https://github.com/ppanko/intro-to-hpc/blob/master/BASH-cheatsheet.md) - the BASH language is used to communicate with Quanah and execute jobs. 
-* [Glossory]() - A list of definitions for common HPC-related terminology. 
+Verified users are invited to try running an example job called "testJob". The [testJob-basic]() directory contains a all of the relevant files needed to run "testJob" as well as a [walkthrough with examples](). Here is the outline of the contents of [testJob-basic]:
+
 * [testJob-basic directory]() - a directory showing a simple example R job, contains: 
     * [run_testJob.sh]() - a shell script used to submit the "02" script to Quanah's job scheduler. 
     * [01_testJob-serial.R]() - an R script showing serial execution. 
     * [02_testJob-parallel.R]() - an R script showing parallel execution. Can be submitted to Quanah via run_testJob.sh
-    * [README]() - provides an example of a workflow for running "testJob" on Quanah. 
+    * [README]() - a walkthrough showing a workflow for running "testJob" on Quanah.
+
+Two pages of learning materials are provided for your convenience and are often referenced by the [testJob walkthrough]:  
+
+* [BASH cheatsheet](https://github.com/ppanko/intro-to-hpc/blob/master/BASH-cheatsheet.md) - the BASH language is used to communicate with Quanah and execute jobs. 
+* [Glossory]() - A list of definitions for common HPC-related terminology. 
+ 
     
 If you have any comments or suggestions, please email me at pavel.panko@ttu.edu

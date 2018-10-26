@@ -6,7 +6,7 @@ The provided examples are for running jobs using the [R language/environment](ht
 ## What is High-Performance Computing? 
 High Performance Computing (HPC) is the use of a computer cluster or other high-performance computer (e.g., a supercomputer) to do computational jobs very very quickly. The benefit of this approach is the efficiency of performance - the user is able to split the job to run in parallel on several nodes (computers) or several processors on a single node.   
 
-In short, HPC is a good technique for when you have a lot of data or need to run many analyses. 
+In short, HPC is a good technique for when you have a lot of data to process or need to run many analyses. 
 
 ## Getting started 
 
@@ -35,7 +35,7 @@ https://www.depts.ttu.edu/hpcc/accounts/studentrequestform.php
 
 ## Resources 
 
-Verified users are invited to try running an example job called "testJob". The [testJob-basic](https://github.com/ppanko/intro-to-hpc/tree/master/testJob-basic) directory contains a all of the relevant files needed to run "testJob" as well as a [walkthrough with examples](https://github.com/ppanko/intro-to-hpc/blob/master/testJob-basic/README.md). Here is the outline of the contents of [testJob-basic](https://github.com/ppanko/intro-to-hpc/tree/master/testJob-basic):
+Verified users are invited to try running an example job called "testJob". The [testJob-basic](https://github.com/ppanko/intro-to-hpc/tree/master/testJob-basic) directory contains all of the relevant files needed to run "testJob" as well as a [walkthrough with examples](https://github.com/ppanko/intro-to-hpc/blob/master/testJob-basic/README.md). Here is the outline of the contents of [testJob-basic](https://github.com/ppanko/intro-to-hpc/tree/master/testJob-basic):
 
 * [testJob-basic directory](https://github.com/ppanko/intro-to-hpc/tree/master/testJob-basic) - a directory showing a simple example R job, contains: 
     * [run_testJob.sh](https://github.com/ppanko/intro-to-hpc/blob/master/testJob-basic/02_testJob-parallel.R) - a shell script used to submit the "02" script to Quanah's job scheduler. 
@@ -43,7 +43,7 @@ Verified users are invited to try running an example job called "testJob". The [
     * [02_testJob-parallel.R](https://github.com/ppanko/intro-to-hpc/blob/master/testJob-basic/02_testJob-parallel.R) - an R script showing parallel execution. Can be submitted to Quanah via run_testJob.sh
     * [README](https://github.com/ppanko/intro-to-hpc/blob/master/testJob-basic/README.md) - a walkthrough showing a workflow for running a job on Quanah.
 
-Two pages of learning materials are provided for your convenience and are often referenced by the [testJob walkthrough](https://github.com/ppanko/intro-to-hpc/blob/master/testJob-basic/README.md):  
+Two pages of learning materials are provided for your convenience. These are often referenced by the [testJob walkthrough](https://github.com/ppanko/intro-to-hpc/blob/master/testJob-basic/README.md):  
 
 * [BASH cheatsheet](https://github.com/ppanko/intro-to-hpc/blob/master/BASH-cheatsheet.md) - the BASH language is used to communicate with Quanah and execute jobs. 
 * [Glossory](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) - A list of definitions for common HPC-related terminology. 

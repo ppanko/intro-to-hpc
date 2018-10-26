@@ -2,7 +2,6 @@
 
 This is a guide for facilitating and running a simple HPC job on the Quanah [computer cluster](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md). The provided examples use the [testJob-basic](https://github.com/ppanko/intro-to-hpc/tree/master/testJob-basic) directory.
 
-&nbsp;
 
 ## 1. Transferring files  
 
@@ -169,4 +168,4 @@ Assumming nothing went wrong with the job, you are ready to retrieve your result
 scp -r <eraider>@quanah.hpcc.ttu.edu:testJob/data /home/pavel/Documents
 ```
 
-**Congratulations!** You just ran an HPC [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) on the Quanah [computer cluster](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md)
+**Congratulations!** You just ran an HPC [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) on the Quanah [computer cluster](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md).

@@ -30,7 +30,7 @@ Assuming you have a job ready and you have an account with the HPCC ([see this i
 > rsync -ave testJob-basic <eraider>@quanah.hpcc.ttu.edu:.
 ```
 
-***Note on large jobs***: if you are transferring very large files they may "strain" Quanah. In these cases it's recommended to use [Globus Connect](https://www.depts.ttu.edu/hpcc/userguides/general_guides/file_transfer.php).
+***Note on large jobs***: if you are transferring very large files, the process may "strain" Quanah. In these cases it's recommended to use [Globus Connect](https://www.depts.ttu.edu/hpcc/userguides/general_guides/file_transfer.php).
 
 ***Note on small scripts***: if your script is really small, you might consider loggin in to Quanah using `ssh` and directly copying the text of the script to new files created on Quanah. Make sure the text was copied over correctly. 
    
@@ -72,8 +72,8 @@ Rscript 02_testJob-parallel.R
 Each of the lines beginning with #$ are the parameters of your job. I will list some of the more important ones below but if you want more information, follow [this](https://bioinformatics.mdc-berlin.de/intro2UnixandSGE/sun_grid_engine_for_beginners/how_to_submit_a_job_using_qsub.html) link. 
 
 * `-N` - the name of your job.
-* `-o` - the "output" file which contains any standard messages from the job.
-* `-e` - the "error" file which contains and errors from the job.
+* `-o` - the "output" file which contains any standard messages from the job. Is named based on the job name (e.g., testJob.o).
+* `-e` - the "error" file which contains and errors from the job. Is named based on the job name (e.g., testJob.e)
 * `-pe` - the "parallel environemnt". Currently the only choices are `sm` and `mpi`; simpler jobs should use `sm`. 
 
 ***Number of Processors***: the number to the right of `-pe sm` indicates the number of processors you are requesting from the job scheduler. For `sm` jobs, the allowed number is 1-36. If you want to request additional cores, you might consider using `mpi` or creating an array job using the `-t` parameter (guide coming soon).  
@@ -108,3 +108,24 @@ Once you run `qsub` the job will be placed in a queue and will be on stand-by un
 ```
 
 Alternatively, you can check your job using HPCC's [queue status page](http://charlie.hpcc.ttu.edu/qstat/qstat.html). This webpage will give you all of the information about all of the jobs submitted to the cluster and give you an idea of how many processors are available. 
+
+If there is something wrong with your job and you want to remove it and start again, you can use [`qdel`](). First, you will need to get your <job_id> via `qstat` and then supply it to `qdel`. 
+
+##### Example: 
+```bash
+> qdel <job_id>
+```
+
+## 4. Retrieving results 
+
+Once your job is done, qstat will return a blank and your eraider will no longer be listed on the queue status page. An easy way to tell if your job terminated correctly is to check the .e or .o files using a text editor, such as `emacs`. 
+
+```bash
+> emacs testJob.e
+
+## OR 
+
+> emacs testJob.o
+```
+When finished checking the files, you can quit `emacs` by pressing Control-c. Assumming nothing went wrong with the job, you are ready to retrieve your results. 
+

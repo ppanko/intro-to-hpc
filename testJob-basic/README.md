@@ -58,7 +58,7 @@ You are now logged in to the [head node](https://github.com/ppanko/intro-to-hpc/
 
 #### Shell script  
 
-At this point you can submit the [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) directly to the [job scheduler](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) using [`qsub`](https://github.com/ppanko/intro-to-hpc/blob/master/BASH-cheatsheet.md). However, this can be messy because you would also have to list all of the [parameters](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) of your job during the call to [`qsub`](https://github.com/ppanko/intro-to-hpc/blob/master/BASH-cheatsheet.md). Creating a [shell script](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md)) that contains all of the [parameters](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) can streamline this process.
+At this point you can submit the [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) directly to the [job scheduler](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) using [`qsub`](https://github.com/ppanko/intro-to-hpc/blob/master/BASH-cheatsheet.md). However, this can be messy because you would also have to list all of the [parameters](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) of your [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) during the call to [`qsub`](https://github.com/ppanko/intro-to-hpc/blob/master/BASH-cheatsheet.md). Creating a [shell script](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) that contains all of the [parameters](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) can streamline this process.
 
 The typical submission script looks just like [run_testJob.sh](https://github.com/ppanko/intro-to-hpc/blob/master/testJob-basic/run_testJob.R):
 ```bash
@@ -115,6 +115,8 @@ Each of the lines beginning with #$ are the [parameters](https://github.com/ppan
 mkdir data
 ```
 
+&nbsp;
+
 ## 3. Running and monitoring your job 
 
 Once you have your [job script](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) properly tested and your [shell script](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) is properly configured, you can submit the [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) to the [job scheduler](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md). You can do so by providing your [shell script](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) as an argument to [`qsub`](https://github.com/ppanko/intro-to-hpc/blob/master/BASH-cheatsheet.md). 
@@ -145,6 +147,7 @@ If there is something wrong with your [job](https://github.com/ppanko/intro-to-h
 > qdel <job_id>
 <eraider> has deleted job <job_id> 
 ```
+&nbsp;
 
 ## 4. Retrieving results 
 
@@ -166,4 +169,4 @@ Assumming nothing went wrong with the job, you are ready to retrieve your result
 scp -r <eraider>@quanah.hpcc.ttu.edu:testJob/data /home/pavel/Documents
 ```
 
-**Congratulations!** You just ran a HPC [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) on the Quanah [computer cluster](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md)
+**Congratulations!** You just ran an HPC [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) on the Quanah [computer cluster](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md)

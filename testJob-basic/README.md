@@ -47,7 +47,7 @@ You can start by logging on to the cluster:
 
 #### Shell script  
 
-At this point you can submit a job directly using [`qsub`](). However, this can be messy because you would also have to list all of the parameters of your job during the call to `qsub`. Creating a [shell script]() that contains all of the parameters can streamline this process
+At this point you can submit a job directly to the job scheduler using [`qsub`](). However, this can be messy because you would also have to list all of the parameters of your job during the call to `qsub`. Creating a [shell script]() that contains all of the parameters can streamline this process.
 
 The typical submission script looks just like run_testJob.sh:
 ```bash
@@ -75,7 +75,7 @@ Each of the lines beginning with #$ are the parameters of your job. I will list 
 * `-e` - the "error" file which contains and errors from the job.
 * `-pe` - the "parallel environemnt". Currently the only choices are `sm` and `mpi`; simpler jobs should use `sm`. 
 
-***Number of Processors***: the number to the right of `-pe sm` indicates the number of processors you are requesting from Quanah. For `sm` jobs, the allowed number is 1-36. If you want to request additional cores, you might consider using `mpi` or creating an array job using the `-t` parameter (guide coming soon).  
+***Number of Processors***: the number to the right of `-pe sm` indicates the number of processors you are requesting from the job scheduler. For `sm` jobs, the allowed number is 1-36. If you want to request additional cores, you might consider using `mpi` or creating an array job using the `-t` parameter (guide coming soon).  
 
 ***Modules***: After the section of job parameters you will see a line that starts with "module". This command tells the job scheduler which "packages" you want to use. When running R jobs the modules you will need are `intel` and `R`. 
 
@@ -87,3 +87,22 @@ Each of the lines beginning with #$ are the parameters of your job. I will list 
 
 ## 3. Running and monitoring your job 
 
+Once you have your job script properly tested and your shell script is properly configured, you can submit the job to the scheduler. You can do so by providing your shell script as an argument to `qsub`. 
+
+##### Example:
+```bash
+## Navigate to the testJob directory
+> cd testJob
+
+## Submit testJob 
+> qsub run_testJob.sh
+```
+
+Once you run `qsub` the job will be placed in a queue and will be on stand-by until the scheduler has allocated the proper resources for your job or there is an error. You can check the status of your job any time by using `qstat`. 
+
+##### Example:
+```bash
+> qstat
+```
+
+Alternatively, you can check your job using HPCC's [queue status page](http://charlie.hpcc.ttu.edu/qstat/qstat.html). This webpage will give you all of the information about all of the jobs submitted to the cluster and give you an idea of how many processors are available. 

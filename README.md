@@ -49,9 +49,9 @@ Two pages of learning materials are provided for your convenience. These are oft
 * [Glossory](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) - A list of definitions for common HPC-related terminology. 
  
  TODO: 
- * Array jobs
+ * job array 
  * mpi jobs & environmental variables
- * mpi-array jobs (yikes)
+ * mpi job array (yikes)
  * Port forwarding for off-campus access 
  * Local R package installation 
  * "Programs" directory with some useful scripts/functions 

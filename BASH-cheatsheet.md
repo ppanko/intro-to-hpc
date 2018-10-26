@@ -1,18 +1,18 @@
 # BASH cheatsheet 
 
-> [bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) (**b**ourne **a**gain **sh**ell) 
+> [BASH](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) (**b**ourne **a**gain **sh**ell) 
 
 &nbsp;&nbsp;&nbsp;Language used to communicate with UNIX/[UNIX-like](https://en.wikipedia.org/wiki/Unix-like) operating systems.
 
-&nbsp;&nbsp;&nbsp;Very useful for facilitating and running [jobs] on a [computer cluster]! 
+&nbsp;&nbsp;&nbsp;Very useful for facilitating and running [jobs](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) on a [computer cluster](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md)! 
 
 &nbsp;
 
-> bash syntax basics 
+> BASH syntax basics 
 
 &nbsp;&nbsp;&nbsp;Usually a command followed by arguments, each separated by a space.
 
-&nbsp;&nbsp;&nbsp;Arguments can be variables, directory paths or options.  
+&nbsp;&nbsp;&nbsp;Arguments can be variables, [directory](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) paths or options.  
 
 &nbsp;
 
@@ -34,9 +34,9 @@
 ```
 &nbsp;
 # Contents
-This cheatsheet gives a basic overview for BASH commands and programs commonly used when navigating the Quanah [computer cluster]() provided by the [HPCC](https://www.depts.ttu.edu/hpcc/) at Texas Tech. 
+This cheatsheet gives a basic overview for BASH commands and programs commonly used when navigating the Quanah [computer cluster](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) provided by the [HPCC](https://www.depts.ttu.edu/hpcc/) at Texas Tech. 
 
-Warning: This guide assumes you have an assigned eraider identity (refered to as \<eraider\> below) and are able to log in to quanah. See the [README]() for more information. 
+Warning: This guide assumes you have an assigned eraider identity (refered to as \<eraider\> below) and are able to log in to Quanah. See the [here](https://github.com/ppanko/intro-to-hpc/blob/master/README.md) for more information. 
   
 &nbsp;
 &nbsp;
@@ -75,7 +75,7 @@ Warning: This guide assumes you have an assigned eraider identity (refered to as
 ***
 > `pwd` (**p**rint **w**orking **d**irectory)
 
-&nbsp;&nbsp;&nbsp;Shows what [directory]() you are in.
+&nbsp;&nbsp;&nbsp;Shows what [directory](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) you are in.
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp;Example:
 
@@ -87,7 +87,7 @@ Warning: This guide assumes you have an assigned eraider identity (refered to as
 ***
 > `ls` (**l**i**s**t files)
 
-&nbsp;&nbsp;&nbsp;Shows you the file names in the specified [directory]().
+&nbsp;&nbsp;&nbsp;Shows you the file names in the specified [directory](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md).
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp;Example:
 ```bash
@@ -98,7 +98,7 @@ Warning: This guide assumes you have an assigned eraider identity (refered to as
 ***
 > `mkdir` (**m**ake **dir**ectory)
 
-&nbsp;&nbsp;&nbsp;Creates a [directory]() (Needs a name).
+&nbsp;&nbsp;&nbsp;Creates a [directory](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) (Needs a name).
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp;Example:
 ```bash
@@ -108,21 +108,29 @@ Warning: This guide assumes you have an assigned eraider identity (refered to as
 ***
 > `cp` (**c**o**p**y)
 
-&nbsp;&nbsp;&nbsp;Copies a file or [directory]() (Needs names of the original and the copy). 
+&nbsp;&nbsp;&nbsp;Copies a file or [directory](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) (Needs names of the original and the copy). 
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp;Example:
 ```bash
-> cp testJob.sh testJob-copy.sh 
+## Copy the file "testJob.sh" 
+> cp testJob.sh testJob-copy.sh
+
+## Copy the directory "testJob"
+> cp -r testJob testJob-copy 
 ```
 &nbsp;
 ***
 > `mv` (**m**o**v**e)
 
-&nbsp;&nbsp;&nbsp;Moves a file or folder (Needs to be directed where to move from and to). 
+&nbsp;&nbsp;&nbsp;Moves a file or directory(https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) (Needs to be told what to move from and to). 
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp;Example:
 ```bash
+## Moving testJob.sh to the "newFolder" directory
 > mv testJob.sh newFolder/
+
+## Moves the directory "testJob" inside "newFolder"
+> mv testJob newFolder  
 ```
 &nbsp;
 ## Network protocols and programs
@@ -130,7 +138,7 @@ Warning: This guide assumes you have an assigned eraider identity (refered to as
 ***
 > `ssh` (**s**ecure **sh**ell)
 
-&nbsp;&nbsp;&nbsp;Access a [remote computer]().
+&nbsp;&nbsp;&nbsp;Access a [remote computer](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md).
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp;Example:
 ```bash
@@ -140,7 +148,7 @@ Warning: This guide assumes you have an assigned eraider identity (refered to as
 ***
 > `scp` (**s**ecure **c**o**p**y)
 
-&nbsp;&nbsp;&nbsp;Copies [local]() files or directories to a [remote computer]().
+&nbsp;&nbsp;&nbsp;Copies [local](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) files or directories to a [remote computer](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md).
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp;Example:
 ```bash
@@ -172,7 +180,7 @@ wget https://github.com/ppanko/intro-to-hpc/BASH-cheatsheet.md
 ***
 > `qsub` (**q**ueue **sub**mit)
 
-&nbsp;&nbsp;&nbsp;Submit a [job]() to the [computer cluster](). 
+&nbsp;&nbsp;&nbsp;Submit a [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) to the [computer cluster](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md). 
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp;Example:
 ```bash
@@ -183,7 +191,7 @@ Your job <job_id> ("testJob") has been submitted
 ***
 > `qstat` (**q**ueue **stat**us)
 
-&nbsp;&nbsp;&nbsp;Check the status of the [scheduler]() queue for <eraider>. 
+&nbsp;&nbsp;&nbsp;Check the status of the [job scheduler](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) queue for <eraider>. 
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp;Example:
 ```bashx
@@ -197,7 +205,7 @@ job-ID    prior   name    user       state     submit/start at      slots
 ***
 > `qdel` (**q**ueue **del**ete)
 
-&nbsp;&nbsp;&nbsp;Delete a submitted [job]() from the [scheduler]() queue.  
+&nbsp;&nbsp;&nbsp;Delete a submitted [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) from the [job scheduler](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) queue.  
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp;Example:
 ```bashx

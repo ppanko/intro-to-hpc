@@ -42,6 +42,7 @@ You can start by logging on to the cluster:
 
 ##### Example:
 ```bash
+## Login to Quanah using your <eraider>
 > ssh <eraider>@quanah.hpcc.ttu.edu
 ```
 
@@ -96,6 +97,7 @@ Once you have your job script properly tested and your shell script is properly 
 
 ## Submit testJob 
 > qsub run_testJob.sh
+Your job <job_id> ("testJob") has been submitted
 ```
 
 Once you run `qsub` the job will be placed in a queue and will be on stand-by until the scheduler has allocated the proper resources for your job or there is an error. You can check the status of your job any time by using `qstat`. 

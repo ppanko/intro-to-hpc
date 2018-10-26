@@ -191,7 +191,7 @@ Your job <job_id> ("testJob") has been submitted
 ***
 > `qstat` (**q**ueue **stat**us)
 
-&nbsp;&nbsp;&nbsp;Check the status of the [job scheduler](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) queue for <eraider>. 
+&nbsp;&nbsp;&nbsp;Check the status of the [job scheduler](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) queue for \<eraider\>. 
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp;Example:
 ```bashx

@@ -52,6 +52,8 @@ Warning: This guide assumes you have an assigned eraider identity (refered to as
    * `cp`
     
    * `mv`
+   
+   * `rm`
     
 ## [2. Network protocols & programs](#network-protocols-and-programs)
 
@@ -131,6 +133,20 @@ Warning: This guide assumes you have an assigned eraider identity (refered to as
 
 ## Moves the directory "testJob" inside "newFolder"
 > mv testJob newFolder  
+```
+&nbsp;
+***
+> `rm` (**r**emo**v**e)
+
+&nbsp;&nbsp;&nbsp;Delete a file or [directory](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) (Needs a name). 
+
+###### &nbsp;&nbsp;&nbsp;&nbsp;Example:
+```bash
+## Delete the file "testJob-copy.sh" 
+> rm testJob-copy.sh 
+
+## Delete the directory "newFolder" 
+> rm -r newFolder  
 ```
 &nbsp;
 ## Network protocols and programs

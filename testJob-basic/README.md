@@ -2,6 +2,8 @@
 
 This is a guide for facilitating and running a simple HPC job on the Quanah [computer cluster](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md). The provided examples use the [testJob-basic](https://github.com/ppanko/intro-to-hpc/tree/master/testJob-basic) [directory](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md)
 
+&nbsp;
+
 ## 1. Transferring files  
 
 The first step to running an HPC job is, _of course_, to create the script that does the [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) you want (i.e., the [job script](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md)). You should always test your job multiple times on your [local computer](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) before thinking about using it [remotely](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md), like on the Quanah [computer cluster](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md). 
@@ -31,10 +33,13 @@ Assuming you have a job ready and you have an account with the HPCC ([see this i
 ## Send the files to Quanah via "rsync"
 > rsync -ave testJob-basic <eraider>@quanah.hpcc.ttu.edu:.
 ```
+&nbsp;
 
 ***Note on large jobs***: if you are transferring very large files, the process may "strain" Quanah. In these cases it's recommended to use [Globus Connect](https://www.depts.ttu.edu/hpcc/userguides/general_guides/file_transfer.php).
 
 ***Note on small scripts***: if your script is really small, you might consider loggin in to Quanah using [`ssh`](https://github.com/ppanko/intro-to-hpc/blob/master/BASH-cheatsheet.md) and directly copying the text of the script to new files created on Quanah. Make sure the text was copied over correctly. 
+   
+&nbsp;
    
 ## 2. Configuring the job 
 
@@ -48,6 +53,8 @@ You can start by logging on to the cluster using [`ssh`](https://github.com/ppan
 > ssh <eraider>@quanah.hpcc.ttu.edu
 ```
 You are now logged in to the [head node](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) which acts as the initermediary between the user and the Quanah [computer cluster](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md). 
+
+&nbsp;
 
 #### Shell script  
 
@@ -70,6 +77,9 @@ module load intel R
 
 Rscript 02_testJob-parallel.R
 ```
+
+&nbsp;
+
 #### Job parameters 
 
 Each of the lines beginning with #$ are the [parameters](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) of your [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md). I will list some of the more important ones below but if you want more information, follow [this link](https://bioinformatics.mdc-berlin.de/intro2UnixandSGE/sun_grid_engine_for_beginners/how_to_submit_a_job_using_qsub.html). 
@@ -79,9 +89,15 @@ Each of the lines beginning with #$ are the [parameters](https://github.com/ppan
 * `-e` - the "error" file which contains errors and warnings from the [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md). Is named based on the [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) name (e.g., testJob.e)
 * `-pe` - the "parallel environemnt". Currently the only choices are `sm` and `mpi`; simpler jobs should use `sm`. 
 
+&nbsp;
+
 ***Number of Processors***: the number to the right of `-pe sm` indicates the number of [processors](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) you are requesting from the [job scheduler](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md). For `sm` jobs, the allowed number is 1-36 because 36 is the maximum number of [processors](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) for each [node](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md). If you want to request additional [processors](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md), you might consider using the `mpi` parallel environment or creating an "array job" using the `-t` parameter (guides coming).  
 
+&nbsp;
+
 ***Modules***: After the section of [job parameters](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) you will see a line that starts with "[module](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md)". This command tells the [job scheduler](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) which "packages" you want to use on Quanah. When running R [jobs](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) the [modules](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) you will need are `intel` and `R`. 
+
+&nbsp;
 
 ***General organization***: Try to stay as organized as you can. A lot of common errors and mistakes can be alleviated by having a good naming convention for your files. Here's a few other things you may want to note:
 

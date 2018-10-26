@@ -168,6 +168,8 @@ When finished checking the files, you can quit `emacs` by pressing Control-c. Yo
 Connection to quanah.hpcc.ttu.edu closed.
 ```
 
+&nbsp;
+
 Assumming nothing went wrong with the job, you are ready to retrieve your results. This means that the data must be copied from the [remote computer](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) to the [local computer](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) - essentially the opposite of step 1. Ideally, your results will be in a pre-specified location and have a known naming convention. Having this structure in place can make getting results to your computer really easy: 
 
 ##### Example:

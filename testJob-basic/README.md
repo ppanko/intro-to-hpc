@@ -19,7 +19,7 @@ Assuming you have a job ready and you have an account with the HPCC ([see this i
 ```bash
 ## My files are in the "testJob-basic" directory 
 > ls testJob-basic
-...
+01_testJob-serial.R  02_testJob-parallel.R  testJob.sh
 
 ## Send all the files to Quanah via "scp" 
 > scp -r testJob-basic <eraider>@quanah.hpcc.ttu.edu:.
@@ -147,4 +147,4 @@ Assumming nothing went wrong with the job, you are ready to retrieve your result
 scp -r <eraider>@quanah.hpcc.ttu.edu:testJob/data /home/pavel/Documents
 ```
 
-***Congratulations!***, you just ran a HPC [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) on the Quanah [computer cluster](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md)
+**Congratulations!**, you just ran a HPC [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) on the Quanah [computer cluster](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md)

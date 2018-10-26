@@ -25,12 +25,12 @@ Assuming you have a job ready and you have an account with the HPCC ([see this i
 01_testJob-serial.R  02_testJob-parallel.R  testJob.sh
 
 ## Send all the files to Quanah via "scp" 
-> scp -r testJob-basic <eraider>@quanah.hpcc.ttu.edu:.
+> scp -r testJob-basic/ <eraider>@quanah.hpcc.ttu.edu:.
 
 ## OR
 
 ## Send the files to Quanah via "rsync"
-> rsync -ave testJob-basic <eraider>@quanah.hpcc.ttu.edu:.
+> rsync -ave testJob-basic/ <eraider>@quanah.hpcc.ttu.edu:testJob-basic/ 
 ```
 &nbsp;
 

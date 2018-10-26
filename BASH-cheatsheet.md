@@ -4,13 +4,13 @@
 
 &nbsp;&nbsp;&nbsp;Language used to communicate with UNIX/[UNIX-like](https://en.wikipedia.org/wiki/Unix-like) operating systems.
 
-&nbsp;&nbsp;&nbsp;Very useful for facilitating and running jobs on a computing cluster! 
+&nbsp;&nbsp;&nbsp;Very useful for facilitating and running [jobs] on a [computer cluster]! 
 
 &nbsp;
 
 > bash syntax basics 
 
-&nbsp;&nbsp;&nbsp;Usually a command followed by arguments separated by a space.
+&nbsp;&nbsp;&nbsp;Usually a command followed by arguments, each separated by a space.
 
 &nbsp;&nbsp;&nbsp;Arguments can be variables, directory paths or options.  
 
@@ -34,9 +34,9 @@
 ```
 &nbsp;
 # Contents
-This cheatsheet gives a basic overview for BASH commands and programs commonly used when navigating the quanah computing cluster provided by the [HPCC](https://www.depts.ttu.edu/hpcc/) at Texas Tech. 
+This cheatsheet gives a basic overview for BASH commands and programs commonly used when navigating the Quanah [computer cluster]() provided by the [HPCC](https://www.depts.ttu.edu/hpcc/) at Texas Tech. 
 
-Warning: This guide assumes you have an assigned eraider identity (refered to as \<eraider\> below) and are able to log in to quanah. See the README for more information. 
+Warning: This guide assumes you have an assigned eraider identity (refered to as \<eraider\> below) and are able to log in to quanah. See the [README]() for more information. 
   
 &nbsp;
 &nbsp;
@@ -75,7 +75,7 @@ Warning: This guide assumes you have an assigned eraider identity (refered to as
 ***
 > `pwd` (**p**rint **w**orking **d**irectory)
 
-&nbsp;&nbsp;&nbsp;Shows what folder you are in.
+&nbsp;&nbsp;&nbsp;Shows what [directory]() you are in.
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp;Example:
 
@@ -87,18 +87,18 @@ Warning: This guide assumes you have an assigned eraider identity (refered to as
 ***
 > `ls` (**l**i**s**t files)
 
-&nbsp;&nbsp;&nbsp;Shows you the files for the specified directory.
+&nbsp;&nbsp;&nbsp;Shows you the file names in the specified [directory]().
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp;Example:
 ```bash
 > ls
-01_serialExample.R  02_parallelExample.R  testJob.sh
+01_testJob-serial.R  02_testJob-parallel.R  testJob.sh
 ```
 &nbsp;
 ***
 > `mkdir` (**m**ake **dir**ectory)
 
-&nbsp;&nbsp;&nbsp;Creates a directory (Needs a name).
+&nbsp;&nbsp;&nbsp;Creates a [directory]() (Needs a name).
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp;Example:
 ```bash
@@ -108,7 +108,7 @@ Warning: This guide assumes you have an assigned eraider identity (refered to as
 ***
 > `cp` (**c**o**p**y)
 
-&nbsp;&nbsp;&nbsp;Copies a file or folder (Needs names of the original and the copy). 
+&nbsp;&nbsp;&nbsp;Copies a file or [directory]() (Needs names of the original and the copy). 
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp;Example:
 ```bash
@@ -130,7 +130,7 @@ Warning: This guide assumes you have an assigned eraider identity (refered to as
 ***
 > `ssh` (**s**ecure **sh**ell)
 
-&nbsp;&nbsp;&nbsp;Access a remote computer.
+&nbsp;&nbsp;&nbsp;Access a [remote computer]().
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp;Example:
 ```bash
@@ -140,15 +140,21 @@ Warning: This guide assumes you have an assigned eraider identity (refered to as
 ***
 > `scp` (**s**ecure **c**o**p**y)
 
-&nbsp;&nbsp;&nbsp;Copies files to a remote computer.
+&nbsp;&nbsp;&nbsp;Copies [local]() files or directories to a [remote computer]().
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp;Example:
 ```bash
-## From local to remote 
+## Copy file from local to remote 
 > scp testJob.sh <eraider>@quanah.hpcc.ttu.edu:testJob.sh
 
-## From remote to local
-> scp <eraider>@quanah.hpcc.ttu.edu:testResult.RDS
+## Copy file from remote to local
+> scp <eraider>@quanah.hpcc.ttu.edu:testResult.RDS .
+
+## Copy directory from local to remote 
+> scp -r testJob <eraider>@quanah.hpcc.ttu.edu:testJob.sh
+
+## Copy directory from remote to local
+> scp -r <eraider>@quanah.hpcc.ttu.edu:data . 
 ```
 &nbsp;
 ***
@@ -166,7 +172,7 @@ wget https://github.com/ppanko/intro-to-hpc/BASH-cheatsheet.md
 ***
 > `qsub` (**q**ueue **sub**mit)
 
-&nbsp;&nbsp;&nbsp;Submit a job to the computer cluster. 
+&nbsp;&nbsp;&nbsp;Submit a [job]() to the [computer cluster](). 
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp;Example:
 ```bash
@@ -177,7 +183,7 @@ Your job <job_id> ("testJob") has been submitted
 ***
 > `qstat` (**q**ueue **stat**us)
 
-&nbsp;&nbsp;&nbsp;Check the status of the que. 
+&nbsp;&nbsp;&nbsp;Check the status of the [scheduler]() queue for <eraider>. 
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp;Example:
 ```bashx
@@ -191,7 +197,7 @@ job-ID    prior   name    user       state     submit/start at      slots
 ***
 > `qdel` (**q**ueue **del**ete)
 
-&nbsp;&nbsp;&nbsp;Delete a submitted job from the que.  
+&nbsp;&nbsp;&nbsp;Delete a submitted [job]() from the [scheduler]() queue.  
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp;Example:
 ```bashx

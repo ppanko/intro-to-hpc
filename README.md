@@ -50,7 +50,7 @@ Two pages of learning materials are provided for your convenience. These are oft
  
  TODO: 
  * Array jobs
- * mpi jobs 
+ * mpi jobs & environmental variables
  * mpi-array jobs (yikes)
  * Port forwarding for off-campus access 
  * Local R package installation 

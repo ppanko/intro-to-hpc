@@ -4,7 +4,7 @@ This is a guide for transferring and running "testJob" on the Quanah cluster.
 
 ## 1. Transferring files  
 
-The first step to running an HPC job is to, _of course_, create the script that does the job. You should always test your job multiple times on your local computer before thinking about using HPC. 
+The first step to running an HPC job is, _of course_, to create the script that does the [job]() you want. You should always test your job multiple times on your [local computer]() before thinking about using it [remotely](), like on the Quanah cluster. 
 
 Assuming you have a job ready and you have an account with the HPCC ([see this if you don't]()), you will need to get your materials to Quanah. This usually involves storing your scripts in a directory and transferring them to Quanah via a [network protocol](). There are several ways to do this:
 
@@ -21,7 +21,7 @@ Assuming you have a job ready and you have an account with the HPCC ([see this i
 > ls testJob-basic
 ...
 
-## Send the files to Quanah via "scp" 
+## Send all the files to Quanah via "scp" 
 > scp -r testJob-basic <eraider>@quanah.hpcc.ttu.edu:.
 
 ## OR
@@ -85,6 +85,16 @@ Each of the lines beginning with #$ are the parameters of your job. I will list 
 * Have your shell script (e.g., run_testJob.sh) in the same directory as your job script (e.g, 02_testJob-parallel.R).
 * Make sure any other directories or files that you need _during_ the job are created before you run the job. 
 * If you are using R packages, make sure they are available. If not you will have to install them for your session (guide coming soon). 
+* Pay special attention to how you save your results. Save to a pre-specified directory and use a descriptive file name. 
+
+##### Example:
+```bash
+## Navigate to the testJob directory
+> cd testJob
+
+## Create a "data" directory to contain the result
+mkdir data
+```
 
 ## 3. Running and monitoring your job 
 
@@ -92,9 +102,6 @@ Once you have your job script properly tested and your shell script is properly 
 
 ##### Example:
 ```bash
-## Navigate to the testJob directory
-> cd testJob
-
 ## Submit testJob 
 > qsub run_testJob.sh
 Your job <job_id> ("testJob") has been submitted
@@ -105,6 +112,9 @@ Once you run `qsub` the job will be placed in a queue and will be on stand-by un
 ##### Example:
 ```bash
 > qstat
+job-ID    prior   name    user       state     submit/start at      slots 
+-------------------------------------------------------------------------
+<job_id> 5.00000 testJob <eraider>     qw    10/26/2018 10:59:59       32  
 ```
 
 Alternatively, you can check your job using HPCC's [queue status page](http://charlie.hpcc.ttu.edu/qstat/qstat.html). This webpage will give you all of the information about all of the jobs submitted to the cluster and give you an idea of how many processors are available. 
@@ -114,6 +124,7 @@ If there is something wrong with your job and you want to remove it and start ag
 ##### Example: 
 ```bash
 > qdel <job_id>
+<eraider> has deleted job <job_id> 
 ```
 
 ## 4. Retrieving results 
@@ -127,5 +138,9 @@ Once your job is done, qstat will return a blank and your eraider will no longer
 
 > emacs testJob.o
 ```
-When finished checking the files, you can quit `emacs` by pressing Control-c. Assumming nothing went wrong with the job, you are ready to retrieve your results. 
+When finished checking the files, you can quit `emacs` by pressing Control-c. 
+
+Assumming nothing went wrong with the job, you are ready to retrieve your results. This means that the data must be copied from the [remote computer]() to the [local computer]() - essentially the opposite of step 1. Ideally, your results will be in a pre-specified location and have a known naming convention. Having this structure in place can make this process really easy: 
+
+
 

@@ -41,7 +41,7 @@ Verified users are invited to try running an example job called "testJob". The [
     * [run_testJob.sh](https://github.com/ppanko/intro-to-hpc/blob/master/testJob-basic/02_testJob-parallel.R) - a shell script used to submit the "02" script to Quanah's job scheduler. 
     * [01_testJob-serial.R](https://github.com/ppanko/intro-to-hpc/blob/master/testJob-basic/01_testJob-serial.R) - an R script showing serial execution. 
     * [02_testJob-parallel.R](https://github.com/ppanko/intro-to-hpc/blob/master/testJob-basic/02_testJob-parallel.R) - an R script showing parallel execution. Can be submitted to Quanah via run_testJob.sh
-    * [README](https://github.com/ppanko/intro-to-hpc/blob/master/testJob-basic/README.md) - a walkthrough showing a workflow for running "testJob" on Quanah.
+    * [README](https://github.com/ppanko/intro-to-hpc/blob/master/testJob-basic/README.md) - a walkthrough showing a workflow for running a job on Quanah.
 
 Two pages of learning materials are provided for your convenience and are often referenced by the [testJob walkthrough](https://github.com/ppanko/intro-to-hpc/blob/master/testJob-basic/README.md):  
 

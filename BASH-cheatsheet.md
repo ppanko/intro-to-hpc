@@ -122,7 +122,7 @@ Warning: This guide assumes you have an assigned eraider identity (refered to as
 ***
 > `mv` (**m**o**v**e)
 
-&nbsp;&nbsp;&nbsp;Moves a file or directory(https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) (Needs to be told what to move from and to). 
+&nbsp;&nbsp;&nbsp;Moves a file or [directory](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) (Needs to be told what to move from and to). 
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp;Example:
 ```bash
@@ -148,7 +148,7 @@ Warning: This guide assumes you have an assigned eraider identity (refered to as
 ***
 > `scp` (**s**ecure **c**o**p**y)
 
-&nbsp;&nbsp;&nbsp;Copies [local](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) files or directories to a [remote computer](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md).
+&nbsp;&nbsp;&nbsp;Copies [local](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) files or [directories](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) to a [remote computer](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md).
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp;Example:
 ```bash
@@ -156,13 +156,13 @@ Warning: This guide assumes you have an assigned eraider identity (refered to as
 > scp testJob.sh <eraider>@quanah.hpcc.ttu.edu:testJob.sh
 
 ## Copy file from remote to local
-> scp <eraider>@quanah.hpcc.ttu.edu:testResult.RDS .
+> scp <eraider>@quanah.hpcc.ttu.edu:testResult.RDS /home/pavel/Documents
 
 ## Copy directory from local to remote 
 > scp -r testJob <eraider>@quanah.hpcc.ttu.edu:testJob.sh
 
 ## Copy directory from remote to local
-> scp -r <eraider>@quanah.hpcc.ttu.edu:data . 
+> scp -r <eraider>@quanah.hpcc.ttu.edu:data /home/pavel/Documents
 ```
 &nbsp;
 ***

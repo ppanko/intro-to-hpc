@@ -2,6 +2,8 @@
 
 This is a guide for facilitating and running a simple HPC job on the Quanah [computer cluster](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md). The provided examples use the [testJob-basic](https://github.com/ppanko/intro-to-hpc/tree/master/testJob-basic) directory.
 
+&nbsp;
+
 ## 0. Preparing a job 
 
 The first step to running an HPC [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) is, _of course_, to create the script that does the [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) you want (i.e., the [job script](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md)). You should always test your [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) multiple times on your [local computer](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) before thinking about using it [remotely](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md), like on the Quanah [computer cluster](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md). You should also measure how long your [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) takes to run as this can be a deciding factor for the amount of resources you request from the [job scheduler](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) or if you need a [cluster computer](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) at all. 

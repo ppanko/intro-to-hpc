@@ -147,4 +147,4 @@ Assumming nothing went wrong with the job, you are ready to retrieve your result
 scp -r <eraider>@quanah.hpcc.ttu.edu:testJob/data /home/pavel/Documents
 ```
 
-**Congratulations!**, you just ran a HPC [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) on the Quanah [computer cluster](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md)
+**Congratulations!** You just ran a HPC [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) on the Quanah [computer cluster](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md)

@@ -51,9 +51,9 @@ Two pages of learning materials are provided for your convenience and are often 
  TODO: 
  * Array jobs
  * mpi jobs 
- * mpi-array jobs
+ * mpi-array jobs (yikes)
  * Port forwarding for off-campus access 
  * Local R package installation 
- 
+ * "Programs" directory with some useful scripts/functions 
     
 If you have any comments or suggestions, please email me at pavel.panko@ttu.edu

@@ -4,7 +4,9 @@ This is a guide for facilitating and running a simple HPC job on the Quanah [com
 
 ## 1. Transferring files  
 
-The first step to running an HPC job is, _of course_, to create the script that does the [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) you want. You should always test your job multiple times on your [local computer](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) before thinking about using it [remotely](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md), like on the Quanah [computer cluster](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md). 
+The first step to running an HPC job is, _of course_, to create the script that does the [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) you want (i.e., the [job script](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md)). You should always test your job multiple times on your [local computer](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) before thinking about using it [remotely](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md), like on the Quanah [computer cluster](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md). 
+
+The [job script](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) should be able to communicate the necessary commands without user input ([interactive processing](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md)). This is called [batch processing](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) and is analogous to providing a set of instructions or templates to the computer. 
 
 Assuming you have a job ready and you have an account with the HPCC ([see this if you don't](https://github.com/ppanko/intro-to-hpc/blob/master/README.md)), you will need to get your materials from your [local computer](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md)) to the [remote computer](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md)) on Quanah. This means transferring them to Quanah via a [network protocol](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md). There are several ways to do this:
 
@@ -45,6 +47,7 @@ You can start by logging on to the cluster using [`ssh`](https://github.com/ppan
 ## Login to Quanah using your <eraider>
 > ssh <eraider>@quanah.hpcc.ttu.edu
 ```
+You are now logged in to the [head node](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) which acts as the initermediary between the user and the Quanah [computer cluster](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md). 
 
 #### Shell script  
 

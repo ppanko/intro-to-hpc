@@ -34,7 +34,7 @@ Assuming you have a [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glo
 ```
 &nbsp;
 
-***Note on large jobs***: if you are transferring very large files, the process may "strain" Quanah. In these cases it's recommended to use [Globus Connect](https://www.depts.ttu.edu/hpcc/userguides/general_guides/file_transfer.php).
+***Note on large jobs***: if you are transferring very large files, the process may "strain" the [head node](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) of Quanah. In these cases it's recommended to use [Globus Connect](https://www.depts.ttu.edu/hpcc/userguides/general_guides/file_transfer.php).
 
 ***Note on small scripts***: if your script is really small, you might consider loggin in to Quanah using [`ssh`](https://github.com/ppanko/intro-to-hpc/blob/master/BASH-cheatsheet.md) and directly copying the text of the script to new files created on Quanah. Make sure the text was copied over correctly. 
    

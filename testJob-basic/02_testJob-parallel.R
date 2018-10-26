@@ -11,7 +11,7 @@ nOccasions <- 200
 nSamples   <- 500
 
 ## Function used to draw standard normal observations 
-createSamples <- function(times, ...) {
+createSampleMatrix <- function(times, ...) {
     ## Create an empty matrix 
     sampleMatrix <- matrix(NA, ncol = nOccasions, nrow = nSamples)
     ## Fill each matrix column with standard normal draws  
@@ -29,7 +29,7 @@ nMats <- 1000
 ## Create a list of "nMats" matrices of standard normal observations
 sampleMatList <- mclapply(
     X          = 1:nMats,
-    FUN        = createSamples,
+    FUN        = createSampleMatrix,
     nOccasions = nOccasions,
     nSamples   = nSamples,
     mc.cores   = 10

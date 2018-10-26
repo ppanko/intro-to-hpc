@@ -70,7 +70,7 @@ The typical submission script looks just like [run_testJob.sh](https://github.co
 #$ -e $JOB_NAME.e$JOB_ID
 #$ -q omni
 #$ -P quanah
-#$ -pe sm 36
+#$ -pe sm 10
 
 module load intel R 
 

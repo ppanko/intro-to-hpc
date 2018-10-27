@@ -182,7 +182,6 @@ Warning: This guide assumes you have an assigned eraider identity (refered to as
 wget https://github.com/ppanko/intro-to-hpc/BASH-cheatsheet.md
 ```
 ***
-&nbsp;
 ## Job scheduler commands 
 > `qsub` (**q**ueue **sub**mit)
 

@@ -85,8 +85,6 @@ Warning: This guide assumes you have an assigned eraider identity (refered to as
 /home/pavel/Documents
 ```
 ***
-&nbsp;
-
 > `ls` (**l**i**s**t files)
 
 &nbsp;&nbsp;&nbsp;Shows you the file names in the specified [directory](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md).

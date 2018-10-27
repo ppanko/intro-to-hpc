@@ -47,19 +47,11 @@ Warning: This guide assumes you have an assigned eraider identity (refered to as
     
 ## [2. Network protocols & programs](#network-protocols-and-programs)
 
-   * `ssh`
-   
-   * `scp`
-   
-   * `wget`
+   `ssh` `scp` `wget`
    
 ## [3. Job scheduler commands](#job-scheduler-commands)
 
-   * `qsub`
-   
-   * `qstat`
-   
-   * `qdel` 
+  `qsub` `qstat` `qdel` 
 ***
 
 ## Common BASH commands

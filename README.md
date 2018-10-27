@@ -46,7 +46,7 @@ Verified users are invited to try running an example job called "testJob". The [
 Two pages of learning materials are provided for your convenience. These are often referenced by the [testJob walkthrough](https://github.com/ppanko/intro-to-hpc/blob/master/testJob-basic/README.md):  
 
 * [BASH cheatsheet](https://github.com/ppanko/intro-to-hpc/blob/master/BASH-cheatsheet.md) - the BASH language is used to communicate with Quanah and execute jobs. 
-* [Glossory](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) - A list of definitions for common HPC-related terminology. 
+* [Glossary](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) - A list of definitions for common HPC-related terminology. 
  
  TODO: 
  * job array 

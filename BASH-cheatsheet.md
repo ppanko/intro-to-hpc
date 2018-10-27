@@ -73,7 +73,6 @@ Warning: This guide assumes you have an assigned eraider identity (refered to as
 ***
 
 ## Common BASH commands
-&nbsp;
 > `pwd` (**p**rint **w**orking **d**irectory)
 
 &nbsp;&nbsp;&nbsp;Shows what [directory](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) you are in.
@@ -95,8 +94,6 @@ Warning: This guide assumes you have an assigned eraider identity (refered to as
 01_testJob-serial.R  02_testJob-parallel.R  testJob.sh
 ```
 ***
-&nbsp;
-
 > `mkdir` (**m**ake **dir**ectory)
 
 &nbsp;&nbsp;&nbsp;Creates a [directory](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) (Needs a name).
@@ -106,8 +103,6 @@ Warning: This guide assumes you have an assigned eraider identity (refered to as
 > mkdir newFolder
 ```
 ***
-&nbsp;
-
 > `cp` (**c**o**p**y)
 
 &nbsp;&nbsp;&nbsp;Copies a file or [directory](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) (Needs names of the original and the copy). 
@@ -121,8 +116,6 @@ Warning: This guide assumes you have an assigned eraider identity (refered to as
 > cp -r testJob testJob-copy 
 ```
 ***
-&nbsp;
-
 > `mv` (**m**o**v**e)
 
 &nbsp;&nbsp;&nbsp;Moves a file or [directory](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) (Needs to be told what to move from and to). 
@@ -136,8 +129,6 @@ Warning: This guide assumes you have an assigned eraider identity (refered to as
 > mv testJob newFolder  
 ```
 ***
-&nbsp;
-
 > `rm` (**r**emo**v**e)
 
 &nbsp;&nbsp;&nbsp;Delete a file or [directory](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) (Needs a name). 
@@ -153,7 +144,6 @@ Warning: This guide assumes you have an assigned eraider identity (refered to as
 ***
 &nbsp;
 ## Network protocols and programs
-&nbsp;
 > `ssh` (**s**ecure **sh**ell)
 
 &nbsp;&nbsp;&nbsp;Access a [remote computer](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md).
@@ -183,7 +173,6 @@ Warning: This guide assumes you have an assigned eraider identity (refered to as
 > scp -r <eraider>@quanah.hpcc.ttu.edu:data /home/pavel/Documents
 ```
 ***
-&nbsp;
 > `wget` (**w**eb **get**)
 
 &nbsp;&nbsp;&nbsp;Get files from the internet.
@@ -195,7 +184,6 @@ wget https://github.com/ppanko/intro-to-hpc/BASH-cheatsheet.md
 ***
 &nbsp;
 ## Job scheduler commands 
-&nbsp;
 > `qsub` (**q**ueue **sub**mit)
 
 &nbsp;&nbsp;&nbsp;Submit a [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) to the [computer cluster](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md). 
@@ -206,8 +194,6 @@ wget https://github.com/ppanko/intro-to-hpc/BASH-cheatsheet.md
 Your job <job_id> ("testJob") has been submitted
 ```
 ***
-&nbsp;
-
 > `qstat` (**q**ueue **stat**us)
 
 &nbsp;&nbsp;&nbsp;Check the status of the [job scheduler](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) queue for \<eraider\>. 
@@ -221,7 +207,6 @@ job-ID    prior   name    user       state     submit/start at      slots
 
 ```
 ***
-&nbsp;
 > `qdel` (**q**ueue **del**ete)
 
 &nbsp;&nbsp;&nbsp;Delete a submitted [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) from the [job scheduler](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) queue.  

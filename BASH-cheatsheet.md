@@ -39,9 +39,8 @@ This cheatsheet gives a basic overview for BASH commands and programs commonly u
 Warning: This guide assumes you have an assigned eraider identity (refered to as \<eraider\> below) and are able to log in to Quanah. See the [here](https://github.com/ppanko/intro-to-hpc/blob/master/README.md) for more information. 
   
 &nbsp;
-&nbsp;
   
-### [Go to\: Common BASH commands](#common-bash-commands)
+### [Go to: Common BASH commands](#common-bash-commands)
 
    `pwd` `ls` `mkdir` `cp` `mv` `rm`
     
@@ -52,9 +51,10 @@ Warning: This guide assumes you have an assigned eraider identity (refered to as
 ### [Go to: Job scheduler commands](#job-scheduler-commands)
 
   `qsub` `qstat` `qdel` 
+  &nbsp;
 ***
-&nbsp;
-## Common BASH commands
+
+## Common BASH commands ([go to contents](#contents))
 > `pwd` (**p**rint **w**orking **d**irectory)
 
 &nbsp;&nbsp;&nbsp;Shows what [directory](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) you are in.

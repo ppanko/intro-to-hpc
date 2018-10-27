@@ -153,7 +153,6 @@ Warning: This guide assumes you have an assigned eraider identity (refered to as
 > ssh <eraider>@quanah.hpcc.ttu.edu
 ```
 ***
-&nbsp;
 > `scp` (**s**ecure **c**o**p**y)
 
 &nbsp;&nbsp;&nbsp;Copies [local](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) files or [directories](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) to a [remote computer](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md).
@@ -182,6 +181,7 @@ Warning: This guide assumes you have an assigned eraider identity (refered to as
 wget https://github.com/ppanko/intro-to-hpc/BASH-cheatsheet.md
 ```
 ***
+&nbsp;
 ## Job scheduler commands 
 > `qsub` (**q**ueue **sub**mit)
 

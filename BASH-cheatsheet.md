@@ -53,7 +53,7 @@ Warning: This guide assumes you have an assigned eraider identity (refered to as
 
   `qsub` `qstat` `qdel` 
 ***
-
+&nbsp;
 ## Common BASH commands
 > `pwd` (**p**rint **w**orking **d**irectory)
 
@@ -125,7 +125,7 @@ Warning: This guide assumes you have an assigned eraider identity (refered to as
 ```
 ***
 &nbsp;
-## Network protocols and programs
+## Network protocols and programs ([go to contents](#contents))
 > `ssh` (**s**ecure **sh**ell)
 
 &nbsp;&nbsp;&nbsp;Access a [remote computer](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md).
@@ -164,7 +164,7 @@ wget https://github.com/ppanko/intro-to-hpc/BASH-cheatsheet.md
 ```
 ***
 &nbsp;
-## Job scheduler commands 
+## Job scheduler commands ([go to contents](#contents))
 > `qsub` (**q**ueue **sub**mit)
 
 &nbsp;&nbsp;&nbsp;Submit a [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) to the [computer cluster](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md). 

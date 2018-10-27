@@ -41,15 +41,15 @@ Warning: This guide assumes you have an assigned eraider identity (refered to as
 &nbsp;
 &nbsp;
   
-## [1. Common BASH commands](#common-bash-commands)
+### [Go to\: Common BASH commands](#common-bash-commands)
 
    `pwd` `ls` `mkdir` `cp` `mv` `rm`
     
-## [2. Network protocols & programs](#network-protocols-and-programs)
+### [Go to: Network protocols & programs](#network-protocols-and-programs)
 
    `ssh` `scp` `wget`
    
-## [3. Job scheduler commands](#job-scheduler-commands)
+### [Go to: Job scheduler commands](#job-scheduler-commands)
 
   `qsub` `qstat` `qdel` 
 ***

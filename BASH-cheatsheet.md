@@ -43,17 +43,7 @@ Warning: This guide assumes you have an assigned eraider identity (refered to as
   
 ## [1. Common BASH commands](#common-bash-commands)
 
-   * `pwd`
-    
-   * `ls`
-    
-   * `mkdir` 
-    
-   * `cp`
-    
-   * `mv`
-   
-   * `rm`
+   `pwd` `ls` `mkdir` `cp` `mv` `rm`
     
 ## [2. Network protocols & programs](#network-protocols-and-programs)
 

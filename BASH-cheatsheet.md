@@ -39,15 +39,15 @@ This cheatsheet gives a basic overview for BASH commands and programs commonly u
 Warning: This guide assumes you have an assigned eraider identity (refered to as \<eraider\> below) and are able to log in to Quanah. See the [here](https://github.com/ppanko/intro-to-hpc/blob/master/README.md) for more information. 
 
   
-### [See Common BASH commands](#common-bash-commands)
+### [Go to: Common BASH commands](#common-bash-commands)
 
    `pwd` `ls` `mkdir` `cp` `mv` `rm`
     
-### [See Network protocols & programs](#network-protocols-and-programs)
+### [Go to: Network protocols & programs](#network-protocols-and-programs)
 
    `ssh` `scp` `wget`
    
-### [See Job scheduler commands](#job-scheduler-commands)
+### [Go to: Job scheduler commands](#job-scheduler-commands)
 
   `qsub` `qstat` `qdel` 
   
@@ -55,7 +55,7 @@ Warning: This guide assumes you have an assigned eraider identity (refered to as
   
 ***
 
-## Common BASH commands ([go to contents](#contents))
+## Common BASH commands 
 > `pwd` (**p**rint **w**orking **d**irectory)
 
 &nbsp;&nbsp;&nbsp;Shows what [directory](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) you are in.
@@ -126,7 +126,7 @@ Warning: This guide assumes you have an assigned eraider identity (refered to as
 ```
 ***
 &nbsp;
-## Network protocols and programs ([go to contents](#contents))
+## Network protocols and programs 
 > `ssh` (**s**ecure **sh**ell)
 
 &nbsp;&nbsp;&nbsp;Access a [remote computer](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md).
@@ -165,7 +165,7 @@ wget https://github.com/ppanko/intro-to-hpc/BASH-cheatsheet.md
 ```
 ***
 &nbsp;
-## Job scheduler commands ([go to contents](#contents))
+## Job scheduler commands 
 > `qsub` (**q**ueue **sub**mit)
 
 &nbsp;&nbsp;&nbsp;Submit a [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) to the [computer cluster](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md). 

@@ -39,15 +39,15 @@ This cheatsheet gives a basic overview for BASH commands and programs commonly u
 Warning: This guide assumes you have an assigned eraider identity (refered to as \<eraider\> below) and are able to log in to Quanah. See the [here](https://github.com/ppanko/intro-to-hpc/blob/master/README.md) for more information. 
 
   
-### [Go to\:Common BASH commands](#common-bash-commands)
+### [Go to - Common BASH commands](#common-bash-commands)
 
    `pwd` `ls` `mkdir` `cp` `mv` `rm`
     
-### [Go to\:Network protocols & programs](#network-protocols-and-programs)
+### [Go to - Network protocols & programs](#network-protocols-and-programs)
 
    `ssh` `scp` `wget`
    
-### [Go to\:Job scheduler commands](#job-scheduler-commands)
+### [Go to - Job scheduler commands](#job-scheduler-commands)
 
   `qsub` `qstat` `qdel` 
   

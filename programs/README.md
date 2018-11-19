@@ -42,6 +42,6 @@ job-ID    prior   name    user       state     submit/start at      slots
 bash quanah_sync.sh -t <eraider> myProject/input_files.zip myFolder/   
 
 ## Transfer a file from Quanah to a local machine 
-bash quanah_sync.sh -f <eraider> myFolder/output_files.zp myProject/ 
+bash quanah_sync.sh -f <eraider> myFolder/output_files.zip myProject/ 
 ```
 ***

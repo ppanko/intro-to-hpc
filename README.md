@@ -48,12 +48,15 @@ Two pages of learning materials are provided for your convenience. These are oft
 * [BASH cheatsheet](https://github.com/ppanko/intro-to-hpc/blob/master/BASH-cheatsheet.md) - the BASH language is used to communicate with Quanah and execute jobs. 
 * [Glossary](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) - A list of definitions for common HPC-related terminology. 
  
+Additionally, there is a directory containing several useful [BASH]((https://github.com/ppanko/intro-to-hpc/blob/master/BASH-cheatsheet.md) scripts: 
+
+* [Programs](https://github.com/ppanko/intro-to-hpc/tree/master/programs) 
+ 
  TODO: 
  * job array 
  * mpi jobs & environmental variables
  * mpi job array (yikes)
  * Port forwarding for off-campus access 
  * Local R package installation 
- * "Programs" directory with some useful scripts/functions 
     
 If you have any comments or suggestions, please email me at pavel.panko@ttu.edu

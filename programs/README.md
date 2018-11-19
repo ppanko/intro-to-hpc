@@ -1,9 +1,5 @@
 ## Programs 
 
-queue_check  
-
-hpc_sync 
-
 > `count_files` 
 
 &nbsp;&nbsp;&nbsp;Count the number of files in a specified [directory](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md).
@@ -33,5 +29,19 @@ job-ID    prior   name    user       state     submit/start at      slots
 -------------------------------------------------------------------------
 <job_id> 5.00000 testJob <eraider>     qw    10/26/2018 10:59:59       32        
 
+```
+***
+> `quanah_sync` 
+
+&nbsp;&nbsp;&nbsp;A wrapper function for [rsync](https://github.com/ppanko/intro-to-hpc/blob/master/BASH-cheatsheet.md) to make transferring files to and from Quanah easier. 
+
+###### &nbsp;&nbsp;&nbsp;&nbsp;Example:
+
+```bash
+## Transfer a file from a local machine to Quanah  
+bash quanah_sync.sh -t <eraider> myProject/input_files.zip myFolder/   
+
+## Transfer a file from Quanah to a local machine 
+bash quanah_sync.sh -f <eraider> myFolder/output_files.zp myProject/ 
 ```
 ***

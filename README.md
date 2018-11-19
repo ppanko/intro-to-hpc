@@ -48,7 +48,7 @@ Two pages of learning materials are provided for your convenience. These are oft
 * [BASH cheatsheet](https://github.com/ppanko/intro-to-hpc/blob/master/BASH-cheatsheet.md) - the BASH language is used to communicate with Quanah and execute jobs. 
 * [Glossary](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) - A list of definitions for common HPC-related terminology. 
  
-Additionally, there is a directory containing several useful [BASH](https://github.com/ppanko/intro-to-hpc/blob/master/BASH-cheatsheet.md) scripts: 
+Additionally, there is a directory containing several useful [BASH](https://github.com/ppanko/intro-to-hpc/blob/master/BASH-cheatsheet.md) scripts to help automate common tasks on Quanah: 
 
 * [Programs](https://github.com/ppanko/intro-to-hpc/tree/master/programs) 
  

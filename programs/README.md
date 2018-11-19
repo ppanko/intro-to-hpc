@@ -20,3 +20,18 @@ hpc_sync
 9010
 ```
 ***
+> `queue_check` 
+
+&nbsp;&nbsp;&nbsp;An automated [qstat](https://github.com/ppanko/intro-to-hpc/blob/master/BASH-cheatsheet.md) that returns the queue status at a specified time interval.
+
+###### &nbsp;&nbsp;&nbsp;&nbsp;Example:
+
+```bash
+## Run qstat every 60 seconds 
+ > bash queue_check.sh 60
+job-ID    prior   name    user       state     submit/start at      slots 
+-------------------------------------------------------------------------
+<job_id> 5.00000 testJob <eraider>     qw    10/26/2018 10:59:59       32        
+
+```
+***

@@ -1,4 +1,4 @@
-# Introduction to High-Performance Computing 
+# Introduction to High-Performance Computing Using R 
 This repository provides example materials for High-Performance Computing using the "[Quanah](https://www.depts.ttu.edu/hpcc/operations/equipment.php)" cluster provided by the [High-Performance Computing Center](https://www.depts.ttu.edu/hpcc/) at Texas Tech University.
 
 The provided examples are for running jobs using the [R language/environment](https://www.r-project.org/about.html). 

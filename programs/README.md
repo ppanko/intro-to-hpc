@@ -8,11 +8,11 @@
 
 ```bash
 ## Will count number of files in current directory by default
-> bash count_files.sh 
+> bash count_files
 10
 
 ## Or, can count files in a specific directory 
-> bash count_files.sh data/
+> bash count_files data/
 9010
 ```
 ***
@@ -24,7 +24,7 @@
 
 ```bash
 ## Run qstat every 60 seconds 
-> bash queue_check.sh 60
+> bash queue_check 60
 job-ID    prior   name    user       state     submit/start at      slots 
 -------------------------------------------------------------------------
 <job_id> 5.00000 testJob <eraider>     qw    10/26/2018 10:59:59       32        
@@ -39,9 +39,9 @@ job-ID    prior   name    user       state     submit/start at      slots
 
 ```bash
 ## Transfer a file from a local machine to Quanah  
-bash quanah_sync.sh -t <eraider> myProject/input_files.zip myFolder/   
+bash quanah_sync -t <eraider> myProject/input_files.zip myFolder/   
 
 ## Transfer a file from Quanah to a local machine 
-bash quanah_sync.sh -f <eraider> myFolder/output_files.zip myProject/ 
+bash quanah_sync -f <eraider> myFolder/output_files.zip myProject/ 
 ```
 ***

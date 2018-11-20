@@ -107,7 +107,7 @@ Each of the lines beginning with #$ are the [parameters](https://github.com/ppan
 
 * Have your [shell script](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) (e.g., [run_testJob.sh](https://github.com/ppanko/intro-to-hpc/blob/master/testJob-basic/run_testJob.R)) in the same [directory](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) as your [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) script (e.g, [02_testJob-parallel.R](https://github.com/ppanko/intro-to-hpc/blob/master/testJob-basic/02_testJob-parallel.R)).
 * Make sure any other [directories](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) or files that you need _during_ the [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) are created before you run the [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md). 
-* If you are using R packages, make sure they are available on Quanah. If not, you will have to install them for your session (guide coming soon). 
+* If you are using R packages, make sure they are available on Quanah. If not, you will have to install them for your session ([guide here](https://github.com/ppanko/intro-to-hpc/blob/master/local-R-packages.md)). 
 * Pay special attention to how you save your results. Save to a pre-specified [directory](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) and use a descriptive file name. 
 
 ##### Example:

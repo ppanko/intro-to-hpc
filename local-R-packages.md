@@ -113,6 +113,38 @@ that directory, simply run this:
 echo 'R_LIBS=/home/<eraider>/libs' >> .Renviron
 ```
 
-This will ensure that the local R library is acknowledged by any R session running inside
-the directory that contains the .Renviron file.While this approach is simple, it is still
-somewhat tedious because each job folder will need to have a separate .Renvion file. 
+This will ensure that the local R library is used by any R session running inside
+the directory that contains the .Renviron file. You can always check that R detects the 
+local library by starting R and running `.libPaths()`. You should see something like this:
+
+```R
+> .libPaths()
+[1] "/home/<eraider>/libs"                               
+[2] "/opt/ohpc/pub/libs/intel/R/3.5.0/lib64/R/library"
+```
+
+While the ".Renviron" approach is simple, it is still somewhat tedious because each job folder 
+will need to have a separate .Renvion file. Instead, the most flexible method for loading local 
+packages is to include the environmental variable inside the job shell script, as shown below: 
+
+```bash
+#!/bin/sh
+#$ -V
+#$ -cwd
+#$ -S /bin/bash
+#$ -N testJob
+#$ -o $JOB_NAME.o$JOB_ID
+#$ -e $JOB_NAME.e$JOB_ID
+#$ -q omni
+#$ -P quanah
+#$ -pe sm 10
+
+module load intel R 
+
+export R_LIBS=/home/ppanko/libs
+
+Rscript 02_testJob-parallel.R
+```
+
+This shell script is the same as the one used for testJob-basic except that it includes the `export` statement that ensures 
+the local library is acknowledged by R. 

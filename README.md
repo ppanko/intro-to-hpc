@@ -43,10 +43,11 @@ Verified users are invited to try running an example job called "testJob". The [
     * [02_testJob-parallel.R](https://github.com/ppanko/intro-to-hpc/blob/master/testJob-basic/02_testJob-parallel.R) - an R script showing parallel execution. Can be submitted to Quanah via run_testJob.sh
     * [README](https://github.com/ppanko/intro-to-hpc/blob/master/testJob-basic/README.md) - a walkthrough showing a workflow for running a job on Quanah.
 
-Two pages of learning materials are provided for your convenience. These are often referenced by the [testJob walkthrough](https://github.com/ppanko/intro-to-hpc/blob/master/testJob-basic/README.md):  
+Three pages of learning materials are provided for your convenience. These are often referenced by the [testJob walkthrough](https://github.com/ppanko/intro-to-hpc/blob/master/testJob-basic/README.md):  
 
 * [BASH cheatsheet](https://github.com/ppanko/intro-to-hpc/blob/master/BASH-cheatsheet.md) - the BASH language is used to communicate with Quanah and execute jobs. 
 * [Glossary](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) - A list of definitions for common HPC-related terminology. 
+* [Local R package installation](https://github.com/ppanko/intro-to-hpc/blob/master/local-R-packages.md) - A tutorial for installing R packages not available by default on Quanah. 
  
 Additionally, there is a directory containing several downloadable [BASH](https://github.com/ppanko/intro-to-hpc/blob/master/BASH-cheatsheet.md) scripts to help automate common tasks on Quanah: 
 
@@ -57,6 +58,5 @@ Additionally, there is a directory containing several downloadable [BASH](https:
  * mpi jobs & environmental variables
  * mpi job array (yikes)
  * Port forwarding for off-campus access 
- * Local R package installation 
     
 If you have any comments or suggestions, please email me at pavel.panko@ttu.edu

@@ -1,0 +1,116 @@
+## Install R packages locally
+
+Some packages may not be available on Quanah. You log on to Quanah...
+
+```
+library(mice)
+error::
+```
+
+You might try to install the package using the `install.packages` functions,
+but you see the following:
+
+```
+install.packages("mice")
+error::
+```
+
+The best option is to install the packages in your local Quanah user session. It's
+helpful to first create a directory that will serve as your local R library.
+
+```
+## Check that our current working directory is correct
+> pwd
+/home/<eraider>
+
+## Create a "libs" directory here  
+> mkdir libs
+```
+
+You can now install packages inside this directory that are not generally available
+on Quanah. You have a couple options for how to do this.
+
+1. Inside R
+
+This is usually the most convenient approach as it is similar to standard R
+package installation. When logged into Quanah, start R by loading the modules
+and starting an R session:
+
+```
+## Load modules
+> module load intel R
+
+## Start R
+> R
+```
+
+Once R is running, the `install.packages` function can be used to install locally when
+provided with the location of the installation directory:
+
+```
+install.packages("mice", lib = "home/<eraider>/libs")
+```
+
+2. Outside R
+
+This approach is more general but requires a bit more preparation.
+
+First, you will need the source URL for the package you want to download.
+These can be usually be found on the cran [web-page](https://cran.r-project.org/web/packages/)
+or another hosting service, just as long as you get the package [tar-ball].
+
+Here's an example using wget:
+
+```
+## Change directories to "libs"
+cd libs
+
+## Download mice package tar-ball using wget
+wget https://cran.r-project.org/src/contrib/mice_3.3.0.tar.gz
+
+```
+
+Once the package [tab-ball] is successfully downloaded, it can be installed
+using R in batch mode by invoking `R CMD INSTALL`:
+
+```
+## Install 
+> R CMD INSTALL mice_3.3.0.tar.gz -l .
+* installing *source* package 'mice'
+...
+```
+
+Note: the argument `-l .` specifies that the package should be installed in the
+current directory.
+
+---
+
+Of course, R will need to be told to look in your local library when attempting
+to find packages to load. Although this can get very tedious, there are a couple
+ways to simplify this process.
+
+The "quick-and-dirty" method is to provide the location of the local R library
+to the `library` function:
+
+```
+library(mice, lib.loc = "/home/<eraider>/libs")
+```
+
+This does not decrease the tedium because the `lib.loc` argument will need to be
+declared each time the library function is used. A better way would be to set
+the local R library directory as an environmental variable in R. This can either be
+declared inside the default R environment (i.e., the .Renviron file) or inside the shell
+script.
+
+To set the local library to be loaded in R by default, you would need to initialize
+the .Renviron file inside the directory of your job script. Once you have navigated to
+that directory, simply run this:
+
+```
+echo 'R_LIBS=/home/<eraider>/libs' >> .Renviron
+
+```
+
+This will ensure that the local R library is acknowledged by any R session running inside
+the directory that contains the .Renviron file.While this approach is simple, it is still
+somewhat tedious because each job folder will need to have a separate .Renvion file. 

@@ -40,7 +40,7 @@ This is usually the most convenient approach as it is similar to standard R
 package installation. When logged into Quanah, start R by loading the modules
 and starting an R session:
 
-```
+```bash
 ## Load modules
 > module load intel R
 
@@ -51,7 +51,7 @@ and starting an R session:
 Once R is running, the `install.packages` function can be used to install locally when
 provided with the location of the installation directory:
 
-```
+```R
 install.packages("mice", lib = "home/<eraider>/libs")
 ```
 
@@ -65,18 +65,18 @@ or another hosting service, just as long as you get the package [tar-ball].
 
 Here's an example using wget:
 
-```
+```bash
 ## Change directories to "libs"
-cd libs
+> cd libs
 
 ## Download mice package tar-ball using wget
-wget https://cran.r-project.org/src/contrib/mice_3.3.0.tar.gz
+> wget https://cran.r-project.org/src/contrib/mice_3.3.0.tar.gz
 ```
 
 Once the package [tab-ball] is successfully downloaded, it can be installed
 using R in batch mode by invoking `R CMD INSTALL`:
 
-```
+```bash
 ## Install 
 > R CMD INSTALL mice_3.3.0.tar.gz -l .
 * installing *source* package 'mice'
@@ -95,8 +95,8 @@ ways to simplify this process.
 The "quick-and-dirty" method is to provide the location of the local R library
 to the `library` function:
 
-```
-library(mice, lib.loc = "/home/<eraider>/libs")
+```R
+> library(mice, lib.loc = "/home/<eraider>/libs")
 ```
 
 This does not decrease the tedium because the `lib.loc` argument will need to be
@@ -109,8 +109,8 @@ To set the local library to be loaded in R by default, you would need to initial
 the .Renviron file inside the directory of your job script. Once you have navigated to
 that directory, simply run this:
 
-```
-echo 'R_LIBS=/home/<eraider>/libs' >> .Renviron
+```bash
+> echo 'R_LIBS=/home/<eraider>/libs' >> .Renviron
 ```
 
 This will ensure that the local R library is used by any R session running inside

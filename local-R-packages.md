@@ -1,24 +1,28 @@
 ## Install R packages locally
 
-Some packages may not be available on Quanah. You log on to Quanah...
+This is a short tutorial for installing R packages in your local Quanah session when they are not already available in the main package directory. 
 
-```
-library(mice)
-error::
-```
+For instance, let's say you would like to use the mice package on Quanah. You log in, start R with the intention of testing
+mice and you see this error message: 
 
-You might try to install the package using the `install.packages` functions,
-but you see the following:
-
-```
-install.packages("mice")
-error::
+```R
+> library(mice)
+## Error in library(mice) : there is no package called 'mice'
 ```
 
-The best option is to install the packages in your local Quanah user session. It's
+You might try to install the package using the `install.packages` function, but you see the following:
+
+```R
+> install.packages("mice")
+## Warning in install.packages("mice") :
+##  'lib = "/opt/ohpc/pub/libs/intel/R/3.5.0/lib64/R/library"' is not writable
+
+```
+
+The best option is to install the packages in your "locally" for your Quanah user session. It's
 helpful to first create a directory that will serve as your local R library.
 
-```
+```bash
 ## Check that our current working directory is correct
 > pwd
 /home/<eraider>
@@ -30,7 +34,7 @@ helpful to first create a directory that will serve as your local R library.
 You can now install packages inside this directory that are not generally available
 on Quanah. You have a couple options for how to do this.
 
-1. Inside R
+#### Installing packages inside R
 
 This is usually the most convenient approach as it is similar to standard R
 package installation. When logged into Quanah, start R by loading the modules
@@ -51,7 +55,7 @@ provided with the location of the installation directory:
 install.packages("mice", lib = "home/<eraider>/libs")
 ```
 
-2. Outside R
+#### Installing packages outside R
 
 This approach is more general but requires a bit more preparation.
 
@@ -67,7 +71,6 @@ cd libs
 
 ## Download mice package tar-ball using wget
 wget https://cran.r-project.org/src/contrib/mice_3.3.0.tar.gz
-
 ```
 
 Once the package [tab-ball] is successfully downloaded, it can be installed
@@ -108,7 +111,6 @@ that directory, simply run this:
 
 ```
 echo 'R_LIBS=/home/<eraider>/libs' >> .Renviron
-
 ```
 
 This will ensure that the local R library is acknowledged by any R session running inside

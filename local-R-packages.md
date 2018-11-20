@@ -1,4 +1,4 @@
-## Install R packages locally
+## Installing R packages locally
 
 This is a short tutorial for installing R packages in your local Quanah session when they are not already available in the main package directory. 
 

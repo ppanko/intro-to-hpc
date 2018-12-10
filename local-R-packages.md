@@ -147,4 +147,4 @@ Rscript 02_testJob-parallel.R
 ```
 
 This shell script is the same as the one used for testJob-basic except that it includes the `export` statement that ensures 
-the local library is acknowledged by R. This method keeps all of the job "settings" together in one legible file and is convenient and modular both of which can help reduce the number of bugs in your job. 
+the local R package directory is acknowledged by R. This method keeps all of the job "settings" together in one legible file which is convenient and modular which can help reduce the number of bugs in your job. 

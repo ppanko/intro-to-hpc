@@ -35,7 +35,7 @@ https://www.depts.ttu.edu/hpcc/accounts/studentrequestform.php
 
 ## Resources 
 
-Verified users are invited to try running an example job called "testJob". The [testJob-basic](https://github.com/ppanko/intro-to-hpc/tree/master/testJob-basic) directory contains all of the relevant files needed to run "testJob" as well as a [walkthrough with examples](https://github.com/ppanko/intro-to-hpc/blob/master/testJob-basic/README.md). Here is the outline of the contents of [testJob-basic](https://github.com/ppanko/intro-to-hpc/tree/master/testJob-basic):
+Verified users are invited to try running an example job called "testJob". The [testJob-basic](https://github.com/ppanko/intro-to-hpc/tree/master/testJob-basic) directory contains all of the relevant files needed to run a simple example HPC job as well as a [walkthrough with examples](https://github.com/ppanko/intro-to-hpc/blob/master/testJob-basic/README.md). Here is the outline of the contents of [testJob-basic](https://github.com/ppanko/intro-to-hpc/tree/master/testJob-basic):
 
 * [testJob-basic directory](https://github.com/ppanko/intro-to-hpc/tree/master/testJob-basic) - a directory showing a simple example R job, contains: 
     * [run_testJob.sh](https://github.com/ppanko/intro-to-hpc/blob/master/testJob-basic/02_testJob-parallel.R) - a shell script used to submit the "02" script to Quanah's job scheduler. 

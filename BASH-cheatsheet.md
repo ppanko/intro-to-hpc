@@ -182,7 +182,7 @@ Your job <job_id> ("testJob") has been submitted
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp;Example:
 ```bash
- > qstat
+> qstat
 job-ID    prior   name    user       state     submit/start at      slots 
 -------------------------------------------------------------------------
 <job_id> 5.00000 testJob <eraider>     qw    10/26/2018 10:59:59       32        
@@ -194,8 +194,8 @@ job-ID    prior   name    user       state     submit/start at      slots
 &nbsp;&nbsp;&nbsp;Delete a submitted [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) from the [job scheduler](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) queue.  
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp;Example:
-```bashx
- > qdel <job_id>
+```bash
+> qdel <job_id>
 <eraider> has deleted job <job_id> 
 ```
 ***

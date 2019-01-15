@@ -162,8 +162,9 @@ we started at 1 (and not 0), so our `<end_id>` should be 361. Overall, the `-t` 
 
 ---
 
-Although the above example is relatively simple, it should fill you with some dissatisfaction, both because this setup
-wastes one processor and that if the math was slightly more complicated, for example `-t 1:253:18`, it would not
+Although the above example is relatively simple, a couple of things stand out:
+* this setup wastes one processor 
+* if the math was slightly more complicated, for example `-t 1:253:18`, it would not
 be immediately clear how many tasks are specified by the `-t` parameter with this setup. 
 
 One way to circumvent this problem is to make your <step_size> equal to 1, such that the <end_id> is equal to the
@@ -177,7 +178,9 @@ total number of tasks you want to create. This can make your life quite simple a
 The initial trouble with this approach is that the size of the tasks no longer corresponds to the number of replications
 we have in our [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) (unless you only need 1 replication per task). If you recall, the example above requests 36 processors
 for each task because we expect that each "chunk" of our [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) requires 36 processors to complete the assigned number of
-replications. On the other hand, if the R [job script](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) is complementary to the simplified `-t` parameter, there should be
+replications. 
+
+On the other hand, if the R [job script](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) is complementary to the simplified `-t` parameter, there should be
 no issue for properly allocating resources.  
 
 ## 5. Array stratification in R 

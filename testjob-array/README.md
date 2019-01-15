@@ -35,7 +35,7 @@ are operating across multiple computers.
 
 #### Submit multiple jobs
 
-The other approach is to split your [job]](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) into several pieces and submit each piece as a separate [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md).
+The other approach is to split your [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) into several pieces and submit each piece as a separate [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md).
 This, of course, will require the creation of several [job scripts](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) as well as some faciliatation of
 your workspace to make certain the two [jobs](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) do not interfere with one-another.
 
@@ -167,7 +167,7 @@ Although the above example is relatively simple, a couple of things stand out:
 * if the math was slightly more complicated, for example `-t 1:253:18`, it would not
 be immediately clear how many tasks are specified by the `-t` parameter with this setup. 
 
-One way to circumvent this problem is to make your <step_size> equal to 1, such that the <end_id> is equal to the
+One way to circumvent this problem is to make your `<step_size>` equal to 1, such that the `<end_id>` is equal to the
 total number of tasks you want to create. This can make your life quite simple as stratifying your [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) in to
 10 tasks using the `-t` parameter can now be done by using:
 

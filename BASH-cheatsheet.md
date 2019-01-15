@@ -49,7 +49,7 @@ Warning: This guide assumes you have an assigned eraider identity (refered to as
    
 ### [Go to: Job scheduler commands](#job-scheduler-commands)
 
-  `qsub` `qstat` `qdel` 
+  `qsub` `qstat` `qdel` `qalter`
   
   &nbsp;
   

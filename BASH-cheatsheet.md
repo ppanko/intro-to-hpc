@@ -181,7 +181,7 @@ Your job <job_id> ("testJob") has been submitted
 &nbsp;&nbsp;&nbsp;Check the status of the [job scheduler](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) queue for \<eraider\>. 
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp;Example:
-```bashx
+```bash
  > qstat
 job-ID    prior   name    user       state     submit/start at      slots 
 -------------------------------------------------------------------------
@@ -197,6 +197,19 @@ job-ID    prior   name    user       state     submit/start at      slots
 ```bashx
  > qdel <job_id>
 <eraider> has deleted job <job_id> 
+```
+***
+> `qalter` (**q**ueue **alter**)
+
+&nbsp;&nbsp;&nbsp;Alter a submitted (but not running) [job's](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) parameters.  
+
+###### &nbsp;&nbsp;&nbsp;&nbsp;Example:
+```bash
+## Put job on hold
+> qalter -h u <job_id>
+
+## Release job on hold
+> qalter -h U <job_id>
 ```
 
 

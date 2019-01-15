@@ -1,5 +1,6 @@
 # Glossary
 
+* _array job_ - a job stratified into a specified series of tasks. 
 * _batch processing_ - instructing a computer to run a job without human interaction.  
 * _command line interface_ - method of interacting with the computer using text commands. 
 * _computer cluster_ - a system of inter-connected computers that can work together to accomplish assigned jobs. 

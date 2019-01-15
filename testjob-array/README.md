@@ -1,4 +1,4 @@
-## Running a job array
+# Running a job array
 
 Disclaimer: The HPCC website has a wonderful guide for creating and submitting [array jobs](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md)
 which can be accessed [here](https://www.depts.ttu.edu/hpcc/userguides/general_guides/array_jobs.php). The guide on this page is focused on HPC [jobs](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) written for R
@@ -68,8 +68,9 @@ qalter -h U <job_id>
 Perhaps the most flexible way to submit long-running [jobs](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) is to create an [array job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) by using the
 `-t` parameter inside your [shell script](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md). This approach is similar to submitting multiple [jobs]() to the [job scheduler](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md)
 except that you will only need one [job script](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md)! The "array" is created by virtue of a single [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md)
-being split into several tasks, each with it's on task ID specified by the `-t` parameter. The benefit
-to this is that an [array job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) will allow for a longer [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) run time as each task will have 48
+being split into several tasks, each with it's on task ID specified by the `-t` parameter. 
+
+The benefit to this is that an [array job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) will allow for a longer [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) run time as each task will have 48
 hours to complete, as opposed to 48 hours total for the [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) itself. All you will need to do in ensure that
 the task IDs are correctly used by your [job script](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) to split your [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) into tasks. Let's take a look at an example
 shell script that uses the `-t` parameter:
@@ -148,7 +149,8 @@ difficult to split a [job](https://github.com/ppanko/intro-to-hpc/blob/master/Gl
 This may require you to make a dummy task or to somehow ensure your [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) can be split up in to several even tasks
 and one uneven one.
 
-For example, let's say our [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) has 360 replications that we want to split into 10 tasks that will be given 36 processors each; how
+#### Example: 
+Let's say our [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) has 360 replications that we want to split into 10 tasks that will be given 36 processors each; how
 would this goal be reflected in the `-t` parameter? We would need to start at the lowest possible integer, 1, and
 work our way up to 360, using steps of size 36. We would prefer to start at 0 and work our way to 360, but unfortunately
 0 is not compatable with the `-t` parameter, so we have to include an offset to our `<end_id>` to make up for the fact that
@@ -158,7 +160,9 @@ we started at 1 (and not 0), so our `<end_id>` should be 361. Overall, the `-t` 
 #$ -t 1-361:36
 ```
 
-Although this example is relatively simple, it should fill you with some dissatisfaction, both because this setup
+---
+
+Although the above example is relatively simple, it should fill you with some dissatisfaction, both because this setup
 wastes one processor and that if the math was slightly more complicated, for example `-t 1:253:18`, it would not
 be immediately clear how many tasks are specified by the `-t` parameter with this setup. 
 
@@ -175,6 +179,8 @@ we have in our [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary
 for each task because we expect that each "chunk" of our [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) requires 36 processors to complete the assigned number of
 replications. On the other hand, if the R [job script](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) is complementary to the simplified `-t` parameter, there should be
 no issue for properly allocating resources.  
+
+## 5. Array stratification in R 
 
 To make the R [job script](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) "aware" of the `-t` parameter settings, we need to make certain that the replications are broken
 up into (ideally) even chunks that can then be assigned to each task. This can

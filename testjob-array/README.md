@@ -137,7 +137,7 @@ taskId_chr <- Sys.getenv("SGE_TASK_ID")
 taskId_num <- as.numeric(Sys.getenv("SGE_TASK_ID"))
 ```
 
-## 4. Stratifying R jobs into tasks
+## 4. Jobs to tasks using the `-t` parameter 
 
 The provided environmental variables offer a number of ways to stratify a [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) into a set of tasks. You are
 certainly free to experiment with different stratigies to find the one that is most intuitive for you.

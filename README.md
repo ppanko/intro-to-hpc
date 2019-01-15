@@ -53,9 +53,8 @@ Additionally, there is a directory containing several downloadable [BASH](https:
 
 * [Programs](https://github.com/ppanko/intro-to-hpc/tree/master/programs) 
  
- TODO: 
- * job array 
- * mpi jobs & environmental variables
+ TODO:
+ * mpi jobs
  * mpi job array (yikes)
  * Port forwarding for off-campus access 
     

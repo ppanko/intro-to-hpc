@@ -80,12 +80,12 @@ shell script that uses the `-t` parameter:
 #$ -V
 #$ -cwd
 #$ -S /bin/bash
-#$ -N testJob
+#$ -N testJob-array
 #$ -o $JOB_NAME.o$JOB_ID
 #$ -e $JOB_NAME.e$JOB_ID
 #$ -q omni
 #$ -P quanah
-#$ -pe sm 
+#$ -pe sm 10
 #$ -t 1-81:8
 
 module load intel R 

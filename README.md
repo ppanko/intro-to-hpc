@@ -17,19 +17,19 @@ In short, HPC is a good technique for when you have a lot of data to process or 
    > Here's a link to the request form: 
 https://www.depts.ttu.edu/hpcc/accounts/studentrequestform.php
  
-2. Configure ssh connection
+2. Configure `ssh` connection
 
     Connections to the Quanah cluster are made through the "Secure Shell" (`ssh`) network protocol. Mac and Unix-like operating systems have access to `ssh` naturally but Windows needs some extra help.   
  
    If you are a Windows user, you can either:
-      * Download Cygwin and configure ssh ([comprehensive guide](https://docs.oracle.com/cd/E24628_01/install.121/e22624/preinstall_req_cygwin_ssh.htm#EMBSC150)) 
+      * Download Cygwin and configure `ssh` ([comprehensive guide](https://docs.oracle.com/cd/E24628_01/install.121/e22624/preinstall_req_cygwin_ssh.htm#EMBSC150)) 
 
       OR
 
       * Download [puTTY](https://www.putty.org/) and [WinSCP](https://winscp.net/eng/download.php)
  
    If you are a macOS user: 
-      * You may need to enable ssh: 
+      * You may need to enable `ssh`: 
       
           *System Preferences pane* → *Sharing applet* → *check the Remote Login checkbox*
 

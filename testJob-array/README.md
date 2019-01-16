@@ -110,7 +110,7 @@ that are created inside the R session by the [shell script](https://github.com/p
 when R is started and serve as "directions" for your [job script](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md). For an [array job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md), the environmental variables
 include several task IDs created by the `-t` parameter in the shell script. Among them are:
 
-```
+```bash
 ## The current task ID
 $SGE_TASK_ID
 

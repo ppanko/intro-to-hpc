@@ -15,7 +15,7 @@ cluster](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md).
 ## 0. Larger, longer jobs 
 
 It's no secret that some [jobs](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) take longer than others. Whether it's due to computational
-complexity, or just a large number of replications, your [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) may be running for days. Unfortunately,
+complexity, or just a large number of conditions, your [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) may be running for days. Unfortunately,
 the Quanah queue has a 48 hour lock-out time for regular users. This means that unless your
 [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) is finished within 48 hours it will be deleted and you will likely lose progress.
 
@@ -150,7 +150,7 @@ This may require you to make a dummy task or to somehow ensure your [job](https:
 and one uneven one.
 
 #### Example: 
-Let's say our [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) has 360 replications that we want to split into 10 tasks that will be given 36 processors each; how
+Let's say our [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) has 360 conditions that we want to split into 10 tasks that will be given 36 processors each; how
 would this goal be reflected in the `-t` parameter? We would need to start at the lowest possible integer, 1, and
 work our way up to 360, using steps of size 36. We would prefer to start at 0 and work our way to 360, but unfortunately
 0 is not compatable with the `-t` parameter, so we have to include an offset to our `<end_id>` to make up for the fact that
@@ -175,16 +175,18 @@ total number of tasks you want to create. This can make your life quite simple a
 #$ -t 1-10:1
 ```
 
-The initial trouble with this approach is that the size of the tasks no longer corresponds to the number of replications
+The initial trouble with this approach is that the size of the tasks no longer corresponds to the number of conditions
 we have in our [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) (unless you only need 1 replication per task). If you recall, the example above requests 36 processors
 for each task because we expect that each "chunk" of our [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) requires 36 processors to complete the assigned number of
-replications. 
+conditions. 
 
 On the other hand, if the R [job script](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) is complementary to the simplified `-t` parameter, there should be
 no issue for properly allocating resources.  
 
 ## 5. Array stratification in R 
 
-To make the R [job script](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) "aware" of the `-t` parameter settings, we need to make certain that the replications are broken
+To make the R [job script](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) "aware" of the `-t` parameter settings, we need to make certain that the conditions are broken
 up into (ideally) even chunks that can then be assigned to each task. This can
-be done by stratifying the replication list and then subsetting the replication list by the provided task ID. 
+be done by stratifying the condition list and then subsetting the condition list by the provided task ID. 
+
+We can start the process by retrieving the necessary environmental variables and placing them inside objects. The most important ones for this example will be `N_SLOTS`, which is the number of requested processors, and `SGE_TASK_ID`, the ID of the current task. 

@@ -49,7 +49,7 @@ The [testJob-basic](https://github.com/ppanko/intro-to-hpc/tree/master/testJob-b
 
 ***Array job example***:
 
-Similarly, the [testJob-array](https://github.com/ppanko/intro-to-hpc/tree/master/testJob-array) directory contains materials for running an array HPC job as well as a [walkthrough](https://github.com/ppanko/intro-to-hpc/blob/master/testJob-array/README.md). The outline of the [testJob-array](https://github.com/ppanko/intro-to-hpc/tree/master/testJob-array) is as follows: 
+Similarly, the [testJob-array](https://github.com/ppanko/intro-to-hpc/tree/master/testJob-array) directory contains materials for running an array HPC job as well as a [walkthrough](https://github.com/ppanko/intro-to-hpc/blob/master/testJob-array/README.md). The outline of the [testJob-array](https://github.com/ppanko/intro-to-hpc/tree/master/testJob-array) directory is as follows: 
 
 * [testJob-array directory](https://github.com/ppanko/intro-to-hpc/tree/master/testJob-array) - a directory showing a simple example R job, contains: 
     * [run_testJob-array.sh](https://github.com/ppanko/intro-to-hpc/blob/master/testJob-array/run_testJob-array.sh) - a shell script used to submit the "01" array script to Quanah's job scheduler. 

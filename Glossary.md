@@ -5,6 +5,7 @@
 * _command line interface_ - method of interacting with the computer using text commands. 
 * _computer cluster_ - a system of inter-connected computers that can work together to accomplish assigned jobs. 
 * _directory_ - a "folder".
+* _environmental variable_ - a pre-defined "setting" used to control a process (i.e., an R session). 
 * _graphical user interface_ - method of interacting with the computer using images or prompts. 
 * _head node_ - the computer that assists users with scheduling jobs to the main computer cluster. 
 * _interactive processing_ - manually instructing a computer to run a set of commands or programs. 
@@ -22,3 +23,4 @@
 * _serial processing_ - method of running a job on a single processor. 
 * _shell_ - a user interface to the operating system.  
 * _shell script_ - a set of commands for the operating system.  
+* _task_ - a single unit of an array job. Almost like its own job, but not quite. 

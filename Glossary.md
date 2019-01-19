@@ -2,6 +2,8 @@
 
 * _array job_ - a job stratified into a specified series of tasks. 
 * _batch processing_ - instructing a computer to run a job without human interaction.  
+* _condition_ - a stand-in term that refers to the smallest unit of the job.
+* _condition list_ - a vector/list containing all of the conditions for a job.
 * _command line interface_ - method of interacting with the computer using text commands. 
 * _computer cluster_ - a system of inter-connected computers that can work together to accomplish assigned jobs. 
 * _directory_ - a "folder".

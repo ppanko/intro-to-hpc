@@ -35,13 +35,28 @@ https://www.depts.ttu.edu/hpcc/accounts/studentrequestform.php
 
 ## Resources 
 
-Verified users are invited to try running an example job called "testJob". The [testJob-basic](https://github.com/ppanko/intro-to-hpc/tree/master/testJob-basic) directory contains all of the relevant files needed to run a simple example HPC job as well as a [walkthrough with examples](https://github.com/ppanko/intro-to-hpc/blob/master/testJob-basic/README.md). Here is the outline of the contents of [testJob-basic](https://github.com/ppanko/intro-to-hpc/tree/master/testJob-basic):
+Verified users are invited to try running any of the available example jobs all having the format "testJob-[type]". 
+
+***Basic job example***:
+
+The [testJob-basic](https://github.com/ppanko/intro-to-hpc/tree/master/testJob-basic) directory contains all of the relevant files needed to run a simple example HPC job as well as a [walkthrough with examples](https://github.com/ppanko/intro-to-hpc/blob/master/testJob-basic/README.md). Here is the outline of the contents of [testJob-basic](https://github.com/ppanko/intro-to-hpc/tree/master/testJob-basic):
 
 * [testJob-basic directory](https://github.com/ppanko/intro-to-hpc/tree/master/testJob-basic) - a directory showing a simple example R job, contains: 
-    * [run_testJob.sh](https://github.com/ppanko/intro-to-hpc/blob/master/testJob-basic/02_testJob-parallel.R) - a shell script used to submit the "02" script to Quanah's job scheduler. 
+    * [run_testJob.sh](https://github.com/ppanko/intro-to-hpc/blob/master/testJob-basic/run_testJob.sh) - a shell script used to submit the "02" basic script to Quanah's job scheduler. 
     * [01_testJob-serial.R](https://github.com/ppanko/intro-to-hpc/blob/master/testJob-basic/01_testJob-serial.R) - an R script showing serial execution (not used - just an example). 
     * [02_testJob-parallel.R](https://github.com/ppanko/intro-to-hpc/blob/master/testJob-basic/02_testJob-parallel.R) - an R script showing parallel execution. Can be submitted to Quanah via run_testJob.sh
     * [README](https://github.com/ppanko/intro-to-hpc/blob/master/testJob-basic/README.md) - a walkthrough showing a workflow for running a job on Quanah.
+
+***Array job example***:
+
+Similarly, the [testJob-array](https://github.com/ppanko/intro-to-hpc/tree/master/testJob-array) directory contains materials for running an array HPC job as well as a [walkthrough](https://github.com/ppanko/intro-to-hpc/blob/master/testJob-array/README.md). The outline of the [testJob-array](https://github.com/ppanko/intro-to-hpc/tree/master/testJob-array) is as follows: 
+
+* [testJob-array directory](https://github.com/ppanko/intro-to-hpc/tree/master/testJob-array) - a directory showing a simple example R job, contains: 
+    * [run_testJob-array.sh](https://github.com/ppanko/intro-to-hpc/blob/master/testJob-array/run_testJob-array.sh) - a shell script used to submit the "01" array script to Quanah's job scheduler. 
+    * [01_testJob-array.R](https://github.com/ppanko/intro-to-hpc/blob/master/testJob-array/01_testJob-array.R) - an R script showing a simple stratified array job. Can be submitted to Quanah via run_testJob-array.sh  
+    * [README](https://github.com/ppanko/intro-to-hpc/blob/master/testJob-array/README.md) - a walkthrough showing a workflow for running an array job on Quanah.
+
+---
 
 Three pages of learning materials are provided for your convenience. These are often referenced by the [testJob walkthrough](https://github.com/ppanko/intro-to-hpc/blob/master/testJob-basic/README.md):  
 

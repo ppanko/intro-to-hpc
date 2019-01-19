@@ -201,8 +201,9 @@ taskId <- as.numeric(Sys.getenv("SGE_TASK_ID"))
   
 Next, we need to divide our [condition list](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) into chunks which will be assigned to each [task](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md). The approach I will detail makes the chunks as a function of the number of processors operationalized by the `nCores` variable. 
 
-We can create a sequence by dividing the number of [conditions](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) we have in the [condition list](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) by `nCores`, like so: 
+We can create a sequence by dividing the number of [conditions](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) we have in the [condition list](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) by `nCores`. 
 
+#### Example: 
 ```R
 conditionSeq  <- seq(
     from = 1,
@@ -226,6 +227,7 @@ Here the `taskId` variable is used to subset the `conditionSeq` vector to find t
 
 Next, the subsetted `useConditions` list is iterated across using the desired function, as seen below using the function `createSampleMatrix`. 
 
+#### Example: 
 ```R
 ## Create a list of matrices of standard normal observations
 sampleMatList <- mclapply(

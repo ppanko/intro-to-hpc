@@ -53,7 +53,7 @@ Similarly, the [testJob-array](https://github.com/ppanko/intro-to-hpc/tree/maste
 
 * [testJob-array directory](https://github.com/ppanko/intro-to-hpc/tree/master/testJob-array) - a directory showing a simple example R job, contains: 
     * [run_testJob-array.sh](https://github.com/ppanko/intro-to-hpc/blob/master/testJob-array/run_testJob-array.sh) - a shell script used to submit the "01" array script to Quanah's job scheduler. 
-    * [01_testJob-array.R](https://github.com/ppanko/intro-to-hpc/blob/master/testJob-array/01_testJob-array.R) - an R script showing a simple stratified array job. Can be submitted to Quanah via run_testJob-array.sh  
+    * [01_testJob-array.R](https://github.com/ppanko/intro-to-hpc/blob/master/testJob-array/01_testJob-array.R) - an R script showing a stratified array job. Can be submitted to Quanah via run_testJob-array.sh  
     * [README](https://github.com/ppanko/intro-to-hpc/blob/master/testJob-array/README.md) - a walkthrough showing a workflow for running an array job on Quanah.
 
 ---

@@ -1,11 +1,11 @@
-# Running a job array
+# Running an array job
 
 Disclaimer: The HPCC website has a wonderful guide for creating and submitting [array jobs](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md)
 which can be accessed [here](https://www.depts.ttu.edu/hpcc/userguides/general_guides/array_jobs.php). The guide on this page is focused on HPC [jobs](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) written for R
 and is intended as a less technically-rigorous, yet a more practially-oriented treatment of
 the subject.
 
-This guide also assumes that you have [access]() to Quanah and know the basics of [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) submission
+This guide also assumes that you have access to Quanah and know the basics of [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) submission
 as laid out on the [testJob-basic](https://github.com/ppanko/intro-to-hpc/tree/master/testJob-basic) page. Once again, I do not offer advice on how to design
 your [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) and only offer advice about how to submit and run the job using the Quanah [computer
 cluster](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md). 
@@ -234,15 +234,15 @@ sampleMatList <- mclapply(
     mc.cores   = nCores
 )
 ```
-***Note:*** As far as the [job scheduler](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) is concerned, submitting an array job is just the same as submitting any other job (provided your [shell script](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) contains the venerable `-t` [job parameter](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md)), so feel free to use commands like [`qsub`](), [`qdel`]() just as you have been doing before! 
+***Note:*** As far as the [job scheduler](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) is concerned, submitting an [array job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) is just the same as submitting any other job (provided your [shell script](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) contains the venerable `-t` [job parameter](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md)), so feel free to use commands like [`qsub`](https://github.com/ppanko/intro-to-hpc/blob/master/BASH-cheatsheet.md#job-scheduler-commands), [`qdel`](https://github.com/ppanko/intro-to-hpc/blob/master/BASH-cheatsheet.md#job-scheduler-commands) just as you have been doing before! 
 
 
 ## 6. Wrapping up 
 
-In this guide, I have laid out the basics and given some examples for running array jobs. Overall, array jobs are useful if you have a large [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) and need a method that will expedite your run time and help you beat the 48-hour lock-out! 
+In this guide, I have laid out the basics and given some examples for running [array jobs](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md). Overall, [array jobs](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) are useful if you have a large [job](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) and need a method that will expedite your run time and help you beat the 48-hour lock-out! 
 
 Some of the ideas I have introduced in this guide may appear obtuse in writing, but I promise that trying these methods will illucidate any confusion you may be left with. I strongly encourage you to practice these skills and in time you will be able to innovate on what you have learned.
 
-***Thank you for reading***, and good luck stratifying! 
+***Thank you for reading***, and good luck stratifying your array! 
 
 

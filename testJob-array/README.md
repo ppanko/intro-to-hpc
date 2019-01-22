@@ -216,7 +216,7 @@ conditionSeq  <- seq(
 
 Subsequently, `conditionSeq` can be used in conjunction with the pre-defined `taskId` variable to find the correct chunk for the particular [task](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md). 
 
-***Example:***
+#### Example: 
 ```R
 ## Subset condition list for the current task
 useIds <- conditionSeq[taskId]:(nCores*taskId)

@@ -190,7 +190,7 @@ be done by stratifying the [condition list](https://github.com/ppanko/intro-to-h
 
 We can start the process by retrieving the necessary [environmental variables](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) and placing them inside objects. The most important ones for this example will be `N_SLOTS`, which is the number of requested processors, and `SGE_TASK_ID`, the ID of the current [task](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) using the previously-mentioned`Sys.getenv` function. This means that once the [job script](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) is running, each [task's](https://github.com/ppanko/intro-to-hpc/blob/master/Glossary.md) R session will have the same value for `nCores` but different values for `taskId`.
 
-***Example:***
+#### Example: 
 ```R
 ## Number of (processors) cores
 nCores <- as.numeric(Sys.getenv("N_SLOTS"))

@@ -32,6 +32,9 @@ https://www.depts.ttu.edu/hpcc/accounts/studentrequestform.php
       * You may need to enable `ssh`: 
       
           *System Preferences pane* → *Sharing applet* → *check the Remote Login checkbox*
+3. Sign in 
+    
+    You will need your "eraider" identification code and Texas Tech password to log in. 
 
 ## Resources 
 

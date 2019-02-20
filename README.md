@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/154785479.svg)](https://zenodo.org/badge/latestdoi/154785479)
+
 # Introduction to High-Performance Computing Using R 
 This repository provides example materials for High-Performance Computing using the "[Quanah](https://www.depts.ttu.edu/hpcc/operations/equipment.php)" cluster provided by the [High-Performance Computing Center](https://www.depts.ttu.edu/hpcc/) at Texas Tech University.
 
